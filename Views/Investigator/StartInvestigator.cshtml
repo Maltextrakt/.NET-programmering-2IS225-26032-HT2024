@@ -1,4 +1,5 @@
-﻿
+﻿@model IEnumerable<Miljoboven.Models.Errand>
+
 @{
     Layout = "_InvestigatorLayout";
 }
@@ -32,68 +33,23 @@
 
 <!--Nedan ser man en lista på ärenden-->
 <table>
-	<tr>
-		<th>Ärende anmält</th>
-		<th>Ärendenummer</th>
-		<th>Miljöbrott</th>
-		<th>Status</th>
-		<th>Avdelning</th>
-		<th>Handläggare</th>
-	</tr>
-	<tr>
-		<td>2023-05-01</td>
-		<td><a	asp-controller="Investigator" asp-action="CrimeInvestigator">2023-45-0201</a></td>
-		<td>Oljeutsläpp</td>
-		<td>Ej startad</td>
-		<td>Tekniska avloppshanteringen</td>
-		<td>Ingen utredare satt</td>
-	</tr>
-	<tr>
-		<td>2023-05-01</td>
-		<td><a asp-controller="Investigator" asp-action="CrimeInvestigator">2023-45-0202</a></td>
-		<td>Oljeutsläpp</td>
-		<td>Pågående</td>
-		<td>Tekniska avloppshanteringen</td>
-		<td>Ada Bengtsson</td>
-	</tr>
-	<tr>
-		<td>2023-05-01</td>
-		<td><a asp-controller="Investigator" asp-action="CrimeInvestigator">2023-45-0203</a></td>
-		<td>Oljeutsläpp</td>
-		<td>Ej startad</td>
-		<td>Tekniska avloppshanteringen</td>
-		<td>Ingen utredare satt</td>
-	</tr>
-	<tr>
-		<td>2023-05-01</td>
-		<td><a asp-controller="Investigator" asp-action="CrimeInvestigator">2023-45-0204</a></td>
-		<td>Oljeutsläpp</td>
-		<td>Ej startad</td>
-		<td>Tekniska avloppshanteringen</td>
-		<td>Ingen utredare satt</td>
-	</tr>
-	<tr>
-		<td>2023-05-01</td>
-		<td><a asp-controller="Investigator" asp-action="CrimeInvestigator">2023-45-0205</a></td>
-		<td>Oljeutsläpp</td>
-		<td>Pågående</td>
-		<td>Tekniska avloppshanteringen</td>
-		<td>Bengt Cederström</td>
-	</tr>
-	<tr>
-		<td>2023-05-01</td>
-		<td><a asp-controller="Investigator" asp-action="CrimeInvestigator">2023-45-0206</a></td>
-		<td>Oljeutsläpp</td>
-		<td>Ej startad</td>
-		<td>Tekniska avloppshanteringen</td>
-		<td>Ingen utredare satt</td>
-	</tr>
-	<tr>
-		<td>2023-05-01</td>
-		<td><a asp-controller="Investigator" asp-action="CrimeInvestigator">2023-45-0206</a></td>
-		<td>Oljeutsläpp</td>
-		<td>Ej startad</td>
-		<td>Tekniska avloppshanteringen</td>
-		<td>Ingen utredare satt</td>
-	</tr>
+    <tr>
+        <th>Ärende anmält</th>
+        <th>Ärendenummer</th>
+        <th>Miljöbrott</th>
+        <th>Status</th>
+        <th>Avdelning</th>
+        <th>Handläggare</th>
+    </tr>
+    @foreach (var errand in Model)
+    {
+        <tr>
+            <td>@errand.DateOfObservation.ToString("yyyy-MM-dd")</td>
+            <td><a asp-controller="Investigator" asp-action="CrimeInvestigator" asp-route-id="@errand.ErrandId">@errand.ErrandId</a></td>
+            <td>@errand.TypeOfCrime</td>
+            <td>@errand.StatusId</td>
+            <td>@errand.DepartmentId</td>
+            <td>@(!string.IsNullOrEmpty(errand.EmployeeId) ? errand.EmployeeId : "Ingen utredare satt")</td>
+        </tr>
+    }
 </table>

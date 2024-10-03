@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Miljoboven.Models;
 
 namespace Miljoboven.Controllers
 {
@@ -25,11 +26,17 @@ namespace Miljoboven.Controllers
 			return View();
 		}
 
-		public ViewResult Validate()
-		{
-			return View();
-		}
+        [HttpPost]
+        public ViewResult Validate(Errand errand)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View("Index", errand);
+            }
+
+            return View(errand);
+        }
 
 
-	}
+    }
 }

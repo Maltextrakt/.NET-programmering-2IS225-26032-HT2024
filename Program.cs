@@ -1,3 +1,5 @@
+using Miljoboven.Models;
+
 namespace Miljoboven
 {
     public class Program
@@ -8,8 +10,10 @@ namespace Miljoboven
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+			builder.Services.AddScoped<IErrandRepository, FakeErrandRepository>();
 
-            var app = builder.Build();
+
+			var app = builder.Build();
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())

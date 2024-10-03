@@ -1,4 +1,5 @@
-﻿
+﻿@model IEnumerable<Miljoboven.Models.Errand>
+
 @{
 	Layout = "_ManagerLayout";
 }
@@ -28,10 +29,13 @@
 		<td>
 			<select name="investigator">
 				<option selected="selected">Välj alla</option>
-				<option value="inv0">Martin Kvist</option>
-				<option value="inv1">Lena Larsson</option>
-				<option value="inv2">Oskar Ivarsson</option>
-				<option value="inv3">Susanne Fred</option>
+				@foreach (var errand in Model)
+				{
+					if (!string.IsNullOrEmpty(errand.EmployeeId))
+					{
+						<option value="@errand.EmployeeId">@errand.EmployeeId</option>
+					}
+				}
 			</select>
 		</td>
 		<td><input class="button" type="submit" value="Hämta lista" /></td>
@@ -50,60 +54,15 @@
 		<th>Avdelning</th>
 		<th>Handläggare</th>
 	</tr>
-	<tr>
-		<td>2023-05-01</td>
-		<td><a asp-controller="Manager" asp-action="CrimeManager">2023-45-0201</a></td>
-		<td>Oljeutsläpp</td>
-		<td>Ej startad</td>
-		<td>Tekniska avloppshanteringen</td>
-		<td>Ingen utredare satt</td>
-	</tr>
-	<tr>
-		<td>2023-05-01</td>
-		<td><a asp-controller="Manager" asp-action="CrimeManager">2023-45-0202</a></td>
-		<td>Oljeutsläpp</td>
-		<td>Pågående</td>
-		<td>Tekniska avloppshanteringen</td>
-		<td>Ada Bengtsson</td>
-	</tr>
-	<tr>
-		<td>2023-05-01</td>
-		<td><a asp-controller="Manager" asp-action="CrimeManager">2023-45-0203</a></td>
-		<td>Oljeutsläpp</td>
-		<td>Ej startad</td>
-		<td>Tekniska avloppshanteringen</td>
-		<td>Ingen utredare satt</td>
-	</tr>
-	<tr>
-		<td>2023-05-01</td>
-		<td><a asp-controller="Manager" asp-action="CrimeManager">2023-45-0204</a></td>
-		<td>Oljeutsläpp</td>
-		<td>Ej startad</td>
-		<td>Tekniska avloppshanteringen</td>
-		<td>Ingen utredare satt</td>
-	</tr>
-	<tr>
-		<td>2023-05-01</td>
-		<td><a asp-controller="Manager" asp-action="CrimeManager">2023-45-0205</a></td>
-		<td>Oljeutsläpp</td>
-		<td>Pågående</td>
-		<td>Tekniska avloppshanteringen</td>
-		<td>Bengt Cederström</td>
-	</tr>
-	<tr>
-		<td>2023-05-01</td>
-		<td><a asp-controller="Manager" asp-action="CrimeManager">2023-45-0206</a></td>
-		<td>Oljeutsläpp</td>
-		<td>Ej startad</td>
-		<td>Tekniska avloppshanteringen</td>
-		<td>Ingen utredare satt</td>
-	</tr>
-	<tr>
-		<td>2023-05-01</td>
-		<td><a asp-controller="Manager" asp-action="CrimeManager">2023-45-0206</a></td>
-		<td>Oljeutsläpp</td>
-		<td>Ej startad</td>
-		<td>Tekniska avloppshanteringen</td>
-		<td>Ingen utredare satt</td>
-	</tr>
+	@foreach (var errand in Model)
+	{
+		<tr>
+			<td>@errand.DateOfObservation.ToString("yyyy-MM-dd")</td>
+			<td><a asp-controller="Manager" asp-action="CrimeManager" asp-route-id="@errand.ErrandId">@errand.ErrandId</a></td>
+			<td>@errand.TypeOfCrime</td>
+			<td>@errand.StatusId</td>
+			<td>@errand.DepartmentId</td>
+			<td>@(!string.IsNullOrEmpty(errand.EmployeeId) ? errand.EmployeeId : "Ingen utredare satt")</td>
+		</tr>
+	}
 </table>

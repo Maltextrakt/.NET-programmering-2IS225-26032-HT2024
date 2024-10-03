@@ -1,17 +1,27 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Miljoboven.Models;
 
 namespace Miljoboven.Controllers
 {
 	public class InvestigatorController : Controller
 	{
-		public ViewResult CrimeInvestigator()
+		private readonly IErrandRepository _errandRepository;
+
+		public InvestigatorController(IErrandRepository errandRepository)
 		{
-			return View();
+			_errandRepository = errandRepository;
 		}
 
-		public ViewResult StartInvestigator()
+		public IActionResult StartInvestigator()
 		{
-			return View();
+			var errands = _errandRepository.GetErrands();
+			return View(errands);
+		}
+
+		public IActionResult CrimeInvestigator(string id)
+		{
+			var errand = _errandRepository.GetErrandById(id);
+			return View(errand);
 		}
 	}
 }
