@@ -1,4 +1,4 @@
-﻿@model Miljoboven.Models.Errand
+﻿@model Errand
 
 @{
     Layout = "_ManagerLayout";
@@ -17,11 +17,16 @@
         Ange handläggare:
         <select name="investigator">
             <option selected="selected">Välj</option>
-            <option value="inv1">Ada Bengtsson</option>
+            @foreach (var employee in ViewBag.Employees)
+            {
+                <option value="employee.EmployeeId">@employee.EmployeeName</option>
+            }
+
+            @* <option value="inv1">Ada Bengtsson</option>
             <option value="inv2">Bengt Cederström</option>
             <option value="inv3">Cecilia Danielsson</option>
             <option value="inv4">David Ekström</option>
-            <option value="inv5">Erik Falkenberg</option>
+            <option value="inv5">Erik Falkenberg</option> *@
         </select>
     </p>
     <p><input type="checkbox" name="noAction" value="true" /> Ingen åtgärd: <input type="text" name="reason" value="Ange motivering" /></p>

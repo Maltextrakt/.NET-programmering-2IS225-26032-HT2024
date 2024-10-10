@@ -13,14 +13,22 @@ namespace Miljoboven.Controllers
 			_errandRepository = errandRepository;
 		}
 
-		public ViewResult StartCoordinator()
+        // Visar startvyn för samordnare med en lista över alla ärenden
+        public ViewResult StartCoordinator()
         {
+            // Hämtar alla ärenden från repositoryt och skickar dem till vyn
             var errands = _errandRepository.GetErrands();
-            return View(errands);
+
+            ViewBag.Statuses = _errandRepository.GetErrandStatuses();
+
+
+			return View(errands);
         }
 
+        // Visar detaljer för ett specifikt errand baserat på dess ID
         public IActionResult CrimeCoordinator(string id)
         {
+            // Om ärende-ID inte anges eller är null returneras ett felmeddelande BadRequest
             if (string.IsNullOrEmpty(id))
             {
                 return BadRequest("Invalid Errand ID.");
@@ -33,6 +41,11 @@ namespace Miljoboven.Controllers
                 return NotFound("Errand not found.");
             }
 
+            // hämta datan dynamiskt
+            ViewBag.Statuses = _errandRepository.GetErrandStatuses();
+            ViewBag.Employees = _errandRepository.GetEmployees();
+            ViewBag.Departments = _errandRepository.GetDepartments();
+
             return View(errand);
         }
 
@@ -41,11 +54,13 @@ namespace Miljoboven.Controllers
             return View();
         }
 
+        // Hanterar formulärinlämning och validering av det inrapporterade ärendet
         [HttpPost]
         public IActionResult Validate(Errand errand)
         {
             if (!ModelState.IsValid)
             {
+                // Om validering misslyckas, visas ReportCrime-vyn igen med det inskickade ärendet
                 return View("ReportCrime", errand);
             }
 

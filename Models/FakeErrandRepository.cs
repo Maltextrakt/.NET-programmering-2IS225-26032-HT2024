@@ -2,8 +2,10 @@
 
 namespace Miljoboven.Models
 {
+    // FakeErrandRepository fungerar som en falsk databas för att lagra och hämta errands
     public class FakeErrandRepository : IErrandRepository
     {
+        // En lista med ärenden som fungerar som en mock datakälla
         private List<Errand> _errands = new List<Errand>
         {
             new Errand {
@@ -77,6 +79,7 @@ namespace Miljoboven.Models
             EmployeeId = "Ej tillsatt"}
         };
 
+        //Lista med "fejk" avdelningar
         private List<Department> _departments = new List<Department>
         {
             new Department { DepartmentId = "D00", DepartmentName = "Småstads kommun" },
@@ -85,6 +88,7 @@ namespace Miljoboven.Models
             new Department { DepartmentId = "D03", DepartmentName = "Miljöskydd" },
         };
 
+        //lista med statusar för errands
         private List<ErrandStatus> _statuses = new List<ErrandStatus>
         {
             new ErrandStatus { StatusId = "S_A", StatusName = "Rapporterad" },
@@ -93,6 +97,7 @@ namespace Miljoboven.Models
             new ErrandStatus { StatusId = "S_D", StatusName = "Färdig" }
         };
 
+        // lista med employees
         private List<Employee> _employees = new List<Employee>
         {
             new Employee {EmployeeId = "E302", EmployeeName = "Martin Bäck", RoleTitle = "Investigator", DepartmentId = "D01"},
@@ -102,24 +107,35 @@ namespace Miljoboven.Models
         };
 
 
+        //metod för att hämta alla ärenden från den falska databasen
         public IEnumerable<Errand> GetErrands()
         {
             return _errands;
         }
 
+        // Metod för att hämta ett specifikt ärende baserat på ärendenummer (ID)
         public Errand GetErrandById(string id)
         {
             return _errands.FirstOrDefault(e => e.ErrandId == id);
         }
 
+        // Metod för att hämta alla departments från den falska databasen
         public IEnumerable<Department> GetDepartments()
         {
             return _departments;
         }
 
-        public IEnumerable<ErrandStatus> GetStatuses()
+        // Metod för att hämta alla statusar för ärenden från den falska databasen
+        public IEnumerable<ErrandStatus> GetErrandStatuses()
         {
             return _statuses;
         }
+        
+        // Metod för att hämta alla employees från den falska databasen
+        public IEnumerable<Employee> GetEmployees() 
+        {  
+            return _employees; 
+        }
+
     }
 }

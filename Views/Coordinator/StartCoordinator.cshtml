@@ -19,20 +19,22 @@
 		<td>
 			<select name="status">
 				<option selected="selected">Välj alla</option>
-				<option value="stat0">Inrapporterad</option>
-				<option value="stat1">Ingen åtgärd</option>
-				<option value="stat2">Påbörjad</option>
-				<option value="stat3">Klar</option>
+				@foreach (var status in ViewBag.Statuses)
+				{
+					<option value="@status.StatusId">@status.StatusName</option>
+				}
 			</select>
 		</td>
 		<td>
 			<select name="department">
 				<option selected="selected">Välj alla</option>
-				<option value="teknik">Tekniska avloppshanteringen</option>
-				<option value="klimat">Klimat och energi</option>
-				<option value="miljo">Miljö och Hälsoskydd</option>
-				<option value="natur">Natur och Skogsvård</option>
-				<option value="avfall">Renhållning och Avfall</option>
+				@foreach (var errand in Model)
+				{
+					if (!string.IsNullOrEmpty(errand.DepartmentId))
+					{
+						<option value="@errand.DepartmentId">@errand.DepartmentId</option>
+					}
+				}
 			</select>
 		</td>
 		<td><input class="button" type="submit" value="Hämta lista" /></td>

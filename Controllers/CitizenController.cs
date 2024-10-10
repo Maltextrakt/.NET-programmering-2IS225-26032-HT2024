@@ -25,10 +25,12 @@ namespace Miljoboven.Controllers
 		{
 			return View();
 		}
-
+        // Metod för att validera formulärdata från användaren
+        // Endast POST-begäran tillåts eftersom det handlar om att skicka data från ett formulär
         [HttpPost]
         public ViewResult Validate(Errand errand)
         {
+            // Kontrollera om modellen (Errand) inte är giltig baserat på de valideringsregler som finns
             if (!ModelState.IsValid)
             {
                 return View("Index", errand);
