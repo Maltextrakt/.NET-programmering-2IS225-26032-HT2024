@@ -1,4 +1,4 @@
-﻿@model Errand
+﻿@model IEnumerable<ErrandStatus>
 
 @{
     Layout = "_InvestigatorLayout";
@@ -8,7 +8,7 @@
 <p class="info">Du är inloggad som handläggare</p>
 
 <!-- Use the ViewComponent to display errand details -->
-@await Component.InvokeAsync("Errand", new { errandId = Model.ErrandId })
+@await Component.InvokeAsync("Errand", new { errandId = ViewBag.ErrandId })
 
 <!-- Keep the dropdown list separate -->
 <section id="bottomColumn">
@@ -29,7 +29,7 @@
     <p class="label">Ändring av status:</p>
     <select name="status">
         <option selected="selected">Välj alla</option>
-        @foreach (var status in ViewBag.Statuses)
+        @foreach (var status in Model)
         {
             <option value="@status.StatusId">@status.StatusName</option>
         }

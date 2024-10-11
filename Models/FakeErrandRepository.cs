@@ -1,4 +1,6 @@
 ﻿using Miljoboven.Models;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace Miljoboven.Models
 {
@@ -6,7 +8,7 @@ namespace Miljoboven.Models
     public class FakeErrandRepository : IErrandRepository
     {
         // En lista med ärenden som fungerar som en mock datakälla
-        private List<Errand> _errands = new List<Errand>
+        public IQueryable<Errand> Errands => new List<Errand>
         {
             new Errand {
             ErrandId = "2023-45-0001",
@@ -77,65 +79,45 @@ namespace Miljoboven.Models
             StatusId = "Inrapporterad",
             DepartmentId = "Ej tillsatt",
             EmployeeId = "Ej tillsatt"}
-        };
+        }.AsQueryable<Errand>();
 
         //Lista med "fejk" avdelningar
-        private List<Department> _departments = new List<Department>
+        public IQueryable<Department> Departments => new List<Department>
         {
             new Department { DepartmentId = "D00", DepartmentName = "Småstads kommun" },
             new Department { DepartmentId = "D01", DepartmentName = "IT-avdelningen" },
             new Department { DepartmentId = "D02", DepartmentName = "Lek och Skoj" },
             new Department { DepartmentId = "D03", DepartmentName = "Miljöskydd" },
-        };
+        }.AsQueryable<Department>();
 
         //lista med statusar för errands
-        private List<ErrandStatus> _statuses = new List<ErrandStatus>
+        public IQueryable<ErrandStatus> Statuses => new List<ErrandStatus>
         {
             new ErrandStatus { StatusId = "S_A", StatusName = "Rapporterad" },
             new ErrandStatus { StatusId = "S_B", StatusName = "Ingen åtgärd" },
             new ErrandStatus { StatusId = "S_C", StatusName = "Startad" },
             new ErrandStatus { StatusId = "S_D", StatusName = "Färdig" }
-        };
+        }.AsQueryable<ErrandStatus>();
 
         // lista med employees
-        private List<Employee> _employees = new List<Employee>
+        public IQueryable<Employee> Employees => new List<Employee>
         {
             new Employee {EmployeeId = "E302", EmployeeName = "Martin Bäck", RoleTitle = "Investigator", DepartmentId = "D01"},
             new Employee {EmployeeId = "E301", EmployeeName = "Lena Kristersson", RoleTitle = "Investigator", DepartmentId = "D01"},
             new Employee {EmployeeId = "E401", EmployeeName = "Oskar Jansson", RoleTitle = "Investigator", DepartmentId = "D02"},
             new Employee {EmployeeId = "E501", EmployeeName = "Susanne Strid", RoleTitle = "Investigator", DepartmentId = "D03"},
-        };
+        }.AsQueryable<Employee>();
 
-
-        //metod för att hämta alla ärenden från den falska databasen
-        public IEnumerable<Errand> GetErrands()
-        {
-            return _errands;
-        }
 
         // Metod för att hämta ett specifikt ärende baserat på ärendenummer (ID)
         public Errand GetErrandById(string id)
         {
-            return _errands.FirstOrDefault(e => e.ErrandId == id);
+            return Errands.FirstOrDefault(e => e.ErrandId == id);
         }
 
-        // Metod för att hämta alla departments från den falska databasen
-        public IEnumerable<Department> GetDepartments()
-        {
-            return _departments;
-        }
+       
 
-        // Metod för att hämta alla statusar för ärenden från den falska databasen
-        public IEnumerable<ErrandStatus> GetErrandStatuses()
-        {
-            return _statuses;
-        }
-        
-        // Metod för att hämta alla employees från den falska databasen
-        public IEnumerable<Employee> GetEmployees() 
-        {  
-            return _employees; 
-        }
+
 
     }
 }

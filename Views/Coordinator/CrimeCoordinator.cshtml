@@ -1,4 +1,4 @@
-﻿@model Errand
+﻿@model IEnumerable<Department>
 
 @{
     Layout = "_CoordinatorLayout";
@@ -10,7 +10,7 @@
 
 
 
-@await Component.InvokeAsync("Errand", new { errandId = Model.ErrandId })
+@await Component.InvokeAsync("Errand", new { errandId = ViewBag.ErrandId })
 
 <section id="bottomColumn">
     <h3>Redigera ärende</h3>
@@ -18,7 +18,7 @@
         Ange enhet:
         <select name="department">
             <option selected="selected">Välj</option>
-            @foreach (var department in ViewBag.Departments)
+            @foreach (var department in Model)
             {
                 <option value="@department.DepartmentId">@department.DepartmentName</option>
             }

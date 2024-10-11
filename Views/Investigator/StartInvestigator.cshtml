@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Miljoboven.Models.Errand>
+﻿@model IErrandRepository
 
 @{
     Layout = "_InvestigatorLayout";
@@ -19,7 +19,7 @@
 		<td>
 			<select name="status">
 				<option selected="selected">Välj alla</option>
-                @foreach (var status in ViewBag.Statuses)
+                @foreach (var status in Model.Statuses)
                 {
                     <option value="@status.StatusId">@status.StatusName</option>
                 }
@@ -41,7 +41,7 @@
         <th>Avdelning</th>
         <th>Handläggare</th>
     </tr>
-    @foreach (var errand in Model)
+    @foreach (var errand in Model.Errands)
     {
         <tr>
             <td>@errand.DateOfObservation.ToString("yyyy-MM-dd")</td>

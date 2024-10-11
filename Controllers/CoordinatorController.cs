@@ -6,23 +6,18 @@ namespace Miljoboven.Controllers
     public class CoordinatorController : Controller
     {
         // Fält för att lagra referensen till IErrandRepository, används för att hämta och manipulera errands
-        private readonly IErrandRepository _errandRepository;
+        private readonly IErrandRepository errandRepository;
         // Konstruktor för att dependency injecta IErrandRepository
         public CoordinatorController(IErrandRepository errandRepository)
 		{
-			_errandRepository = errandRepository;
+			this.errandRepository = errandRepository;
 		}
 
         // Visar startvyn för samordnare med en lista över alla ärenden
         public ViewResult StartCoordinator()
         {
-            // Hämtar alla ärenden från repositoryt och skickar dem till vyn
-            var errands = _errandRepository.GetErrands();
 
-            ViewBag.Statuses = _errandRepository.GetErrandStatuses();
-
-
-			return View(errands);
+			return View(errandRepository);
         }
 
         // Visar detaljer för ett specifikt errand baserat på dess ID
@@ -34,19 +29,9 @@ namespace Miljoboven.Controllers
                 return BadRequest("Invalid Errand ID.");
             }
 
-            var errand = _errandRepository.GetErrandById(id);
+            ViewBag.ErrandId = id;  
 
-            if (errand == null)
-            {
-                return NotFound("Errand not found.");
-            }
-
-            // hämta datan dynamiskt
-            ViewBag.Statuses = _errandRepository.GetErrandStatuses();
-            ViewBag.Employees = _errandRepository.GetEmployees();
-            ViewBag.Departments = _errandRepository.GetDepartments();
-
-            return View(errand);
+            return View(errandRepository.Departments);  
         }
 
         public ViewResult ReportCrime()
