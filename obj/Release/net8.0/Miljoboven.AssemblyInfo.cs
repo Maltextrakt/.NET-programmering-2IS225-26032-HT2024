@@ -12,9 +12,9 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("Miljoboven")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d9d0e099757bfc8d2ba850873168fff19a78ded0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4d3a5d1d203b3c4384415e355c3e80ed9a58437")]
 [assembly: System.Reflection.AssemblyProductAttribute("Miljoboven")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Miljoboven")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

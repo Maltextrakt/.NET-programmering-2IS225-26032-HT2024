@@ -26,3 +26,4 @@ C:\Users\Malte\source\repos\Miljoboven\obj\Debug\net8.0\refint\Miljoboven.dll
 C:\Users\Malte\source\repos\Miljoboven\obj\Debug\net8.0\Miljoboven.pdb
 C:\Users\Malte\source\repos\Miljoboven\obj\Debug\net8.0\Miljoboven.genruntimeconfig.cache
 C:\Users\Malte\source\repos\Miljoboven\obj\Debug\net8.0\ref\Miljoboven.dll
+C:\Users\Malte\source\repos\Miljoboven\obj\Debug\net8.0\Miljoboven.sourcelink.json

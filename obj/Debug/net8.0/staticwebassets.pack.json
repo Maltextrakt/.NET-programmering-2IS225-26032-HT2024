@@ -1,87 +1,87 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\wwwroot\\css\\style.css",
+      "Id": "C:\\Users\\malte\\source\\repos\\Miljoboven\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\wwwroot\\images\\background.png",
+      "Id": "C:\\Users\\malte\\source\\repos\\Miljoboven\\wwwroot\\images\\background.png",
       "PackagePath": "staticwebassets\\images\\background.png"
     },
     {
-      "Id": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\wwwroot\\images\\background_darker.png",
+      "Id": "C:\\Users\\malte\\source\\repos\\Miljoboven\\wwwroot\\images\\background_darker.png",
       "PackagePath": "staticwebassets\\images\\background_darker.png"
     },
     {
-      "Id": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\wwwroot\\images\\button.png",
+      "Id": "C:\\Users\\malte\\source\\repos\\Miljoboven\\wwwroot\\images\\button.png",
       "PackagePath": "staticwebassets\\images\\button.png"
     },
     {
-      "Id": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\wwwroot\\images\\buttonHover.png",
+      "Id": "C:\\Users\\malte\\source\\repos\\Miljoboven\\wwwroot\\images\\buttonHover.png",
       "PackagePath": "staticwebassets\\images\\buttonHover.png"
     },
     {
-      "Id": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\wwwroot\\images\\imagetest.jpg",
+      "Id": "C:\\Users\\malte\\source\\repos\\Miljoboven\\wwwroot\\images\\imagetest.jpg",
       "PackagePath": "staticwebassets\\images\\imagetest.jpg"
     },
     {
-      "Id": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\wwwroot\\images\\login.png",
+      "Id": "C:\\Users\\malte\\source\\repos\\Miljoboven\\wwwroot\\images\\login.png",
       "PackagePath": "staticwebassets\\images\\login.png"
     },
     {
-      "Id": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\wwwroot\\images\\logout.png",
+      "Id": "C:\\Users\\malte\\source\\repos\\Miljoboven\\wwwroot\\images\\logout.png",
       "PackagePath": "staticwebassets\\images\\logout.png"
     },
     {
-      "Id": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\wwwroot\\images\\menu.png",
+      "Id": "C:\\Users\\malte\\source\\repos\\Miljoboven\\wwwroot\\images\\menu.png",
       "PackagePath": "staticwebassets\\images\\menu.png"
     },
     {
-      "Id": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\wwwroot\\images\\menuHover.png",
+      "Id": "C:\\Users\\malte\\source\\repos\\Miljoboven\\wwwroot\\images\\menuHover.png",
       "PackagePath": "staticwebassets\\images\\menuHover.png"
     },
     {
-      "Id": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\wwwroot\\images\\pdficon_large.gif",
+      "Id": "C:\\Users\\malte\\source\\repos\\Miljoboven\\wwwroot\\images\\pdficon_large.gif",
       "PackagePath": "staticwebassets\\images\\pdficon_large.gif"
     },
     {
-      "Id": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\wwwroot\\images\\pic_1.jpg",
+      "Id": "C:\\Users\\malte\\source\\repos\\Miljoboven\\wwwroot\\images\\pic_1.jpg",
       "PackagePath": "staticwebassets\\images\\pic_1.jpg"
     },
     {
-      "Id": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\wwwroot\\images\\pic_2.jpg",
+      "Id": "C:\\Users\\malte\\source\\repos\\Miljoboven\\wwwroot\\images\\pic_2.jpg",
       "PackagePath": "staticwebassets\\images\\pic_2.jpg"
     },
     {
-      "Id": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\wwwroot\\images\\pic_3.jpg",
+      "Id": "C:\\Users\\malte\\source\\repos\\Miljoboven\\wwwroot\\images\\pic_3.jpg",
       "PackagePath": "staticwebassets\\images\\pic_3.jpg"
     },
     {
-      "Id": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\wwwroot\\images\\pic_4.jpg",
+      "Id": "C:\\Users\\malte\\source\\repos\\Miljoboven\\wwwroot\\images\\pic_4.jpg",
       "PackagePath": "staticwebassets\\images\\pic_4.jpg"
     },
     {
-      "Id": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\wwwroot\\images\\pic_5.jpg",
+      "Id": "C:\\Users\\malte\\source\\repos\\Miljoboven\\wwwroot\\images\\pic_5.jpg",
       "PackagePath": "staticwebassets\\images\\pic_5.jpg"
     },
     {
-      "Id": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\wwwroot\\images\\pic_6.jpg",
+      "Id": "C:\\Users\\malte\\source\\repos\\Miljoboven\\wwwroot\\images\\pic_6.jpg",
       "PackagePath": "staticwebassets\\images\\pic_6.jpg"
     },
     {
-      "Id": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\wwwroot\\images\\pic_7.jpg",
+      "Id": "C:\\Users\\malte\\source\\repos\\Miljoboven\\wwwroot\\images\\pic_7.jpg",
       "PackagePath": "staticwebassets\\images\\pic_7.jpg"
     },
     {
-      "Id": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\wwwroot\\images\\pic_8.jpg",
+      "Id": "C:\\Users\\malte\\source\\repos\\Miljoboven\\wwwroot\\images\\pic_8.jpg",
       "PackagePath": "staticwebassets\\images\\pic_8.jpg"
     },
     {
-      "Id": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\wwwroot\\images\\report.png",
+      "Id": "C:\\Users\\malte\\source\\repos\\Miljoboven\\wwwroot\\images\\report.png",
       "PackagePath": "staticwebassets\\images\\report.png"
     },
     {
-      "Id": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\wwwroot\\images\\report_add.png",
+      "Id": "C:\\Users\\malte\\source\\repos\\Miljoboven\\wwwroot\\images\\report_add.png",
       "PackagePath": "staticwebassets\\images\\report_add.png"
     },
     {
