@@ -15,10 +15,10 @@ namespace Miljoboven.Controllers
 		}
 
         // Visar detaljer för ett specifikt ärende för en manager baserat på ärende-ID
-        public IActionResult CrimeManager(string id)
+        public IActionResult CrimeManager(int id)
 		{
 
-            if (string.IsNullOrEmpty(id))
+            if (id < 0)
             {
                 return BadRequest("Invalid Errand ID.");
             }
