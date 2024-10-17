@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Miljoboven.Models;
 using Miljoboven.Models.POCO;
+using Miljoboven.Infrastructure;
 
 namespace Miljoboven.Controllers
 {
@@ -38,22 +39,13 @@ namespace Miljoboven.Controllers
 
         public ViewResult ReportCrime()
         {
-            var errand = new Errand();
+            var errand = HttpContext.Session.Get<Errand>("CoordinatorErrand");
 
-            errand.Place = HttpContext.Session.GetString("Place");
-            errand.TypeOfCrime = HttpContext.Session.GetString("TypeOfCrime");
-            errand.InformerName = HttpContext.Session.GetString("InformerName");
-            errand.InformerPhone = HttpContext.Session.GetString("InformerPhone");
-            errand.Observation = HttpContext.Session.GetString("Observation");
-
-            var dateString = HttpContext.Session.GetString("DateOfObservation");
-            if (!string.IsNullOrEmpty(dateString))
+            if (errand == null)
+            { errand = new Errand
             {
-                errand.DateOfObservation = DateTime.Parse(dateString);
-            }
-            else
-            {
-                errand.DateOfObservation = DateTime.Today;
+                DateOfObservation = DateTime.Today
+            };
             }
 
             return View(errand);
@@ -69,15 +61,7 @@ namespace Miljoboven.Controllers
                 return View("ReportCrime", errand);
             }
 
-            HttpContext.Session.SetString("Place", errand.Place);
-            HttpContext.Session.SetString("TypeOfCrime", errand.TypeOfCrime);
-            HttpContext.Session.SetString("InformerName", errand.InformerName);
-            HttpContext.Session.SetString("InformerPhone", errand.InformerPhone);
-            HttpContext.Session.SetString("Observation", errand.Observation);
-
-            // For DateTime, serialize it to a string
-            HttpContext.Session.SetString("DateOfObservation", errand.DateOfObservation.ToString("o"));
-
+            HttpContext.Session.Set("CoordinatorErrand", errand);
 
             return View(errand);
         }
@@ -85,23 +69,22 @@ namespace Miljoboven.Controllers
         public ViewResult Thanks()
         {
             // Återskapa ärendet från sessionsdatan
-            var errandToSave = new Errand
+            // Återskapa errandet från sessionsdatan
+            var errandToSave = HttpContext.Session.Get<Errand>("CoordinatorErrand");
+
+
+            if (errandToSave != null)
             {
-                Place = HttpContext.Session.GetString("Place"),
-                TypeOfCrime = HttpContext.Session.GetString("TypeOfCrime"),
-                InformerName = HttpContext.Session.GetString("InformerName"),
-                InformerPhone = HttpContext.Session.GetString("InformerPhone"),
-                Observation = HttpContext.Session.GetString("Observation"),
-                DateOfObservation = DateTime.Parse(HttpContext.Session.GetString("DateOfObservation")),
-                StatusId = "S_A"
-            };
+                // spara alla nya errand status IDs som S_A
+                errandToSave.StatusId = "S_A";
 
-            //spara errandet i databasen
-            errandRepository.SaveErrand(errandToSave);
+                //spara ärendet i databasen
+                errandRepository.SaveErrand(errandToSave);
 
-            ViewBag.RefNumber = errandToSave.RefNumber;
-
-            HttpContext.Session.Clear();
+                ViewBag.RefNumber = errandToSave.RefNumber;
+                //stäng ner sessionen
+                HttpContext.Session.Clear();
+            }
 
             return View();
         }

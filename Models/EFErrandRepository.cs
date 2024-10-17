@@ -21,7 +21,8 @@ namespace Miljoboven.Models
         {
             return context.Errands.FirstOrDefault(e => e.ErrandId == id);
         }
-                
+        
+        //sparar nya errands eller editar existerande errands
         public void SaveErrand(Errand errand)
         {
             if(errand.ErrandId == 0)
@@ -66,6 +67,7 @@ namespace Miljoboven.Models
             context.SaveChanges();
         }
 
+        //tar bort ett ärende från databasen
         public Errand DeleteErrand(int errandId)
         {
             Errand dbEntry = context.Errands.FirstOrDefault(e => e.ErrandId == errandId);

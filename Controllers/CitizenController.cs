@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Miljoboven.Models;
 using Miljoboven.Models.POCO;
+using Miljoboven.Infrastructure;
 
 namespace Miljoboven.Controllers
 {
@@ -34,23 +35,22 @@ namespace Miljoboven.Controllers
         public ViewResult Thanks()
         {
             // Återskapa errandet från sessionsdatan
-            var errandToSave = new Errand
+            var errandToSave = HttpContext.Session.Get<Errand>("CitizenErrand");
+
+
+            if(errandToSave != null)
             {
-                Place = HttpContext.Session.GetString("Place"),
-                TypeOfCrime = HttpContext.Session.GetString("TypeOfCrime"),
-                InformerName = HttpContext.Session.GetString("InformerName"),
-                InformerPhone = HttpContext.Session.GetString("InformerPhone"),
-                Observation = HttpContext.Session.GetString("Observation"),
-                DateOfObservation = DateTime.Parse(HttpContext.Session.GetString("DateOfObservation")),
-                StatusId = "S_A" 
-            };
+                // spara alla nya errand status IDs som S_A
+                errandToSave.StatusId = "S_A";
 
+                //spara ärendet i databasen
+                errandRepository.SaveErrand(errandToSave);
+
+                ViewBag.RefNumber = errandToSave.RefNumber;
+                //stäng ner sessionen
+                HttpContext.Session.Clear();
+            }
             
-            errandRepository.SaveErrand(errandToSave);
-
-            ViewBag.RefNumber = errandToSave.RefNumber;
-
-            HttpContext.Session.Clear();
 
             return View();
         }
@@ -68,15 +68,7 @@ namespace Miljoboven.Controllers
                 return View("~/Views/Home/Index", errand);
             }
 
-            HttpContext.Session.SetString("Place", errand.Place);
-            HttpContext.Session.SetString("TypeOfCrime", errand.TypeOfCrime);
-            HttpContext.Session.SetString("InformerName", errand.InformerName);
-            HttpContext.Session.SetString("InformerPhone", errand.InformerPhone);
-            HttpContext.Session.SetString("Observation", errand.Observation);
-
-            
-            HttpContext.Session.SetString("DateOfObservation", errand.DateOfObservation.ToString("o"));
-
+            HttpContext.Session.Set("CitizenErrand", errand);
             return View("Validate", errand);
         }
 

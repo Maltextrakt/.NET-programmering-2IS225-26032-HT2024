@@ -3,6 +3,7 @@ using Miljoboven.Models.POCO;
 
 namespace Miljoboven.Models
 {
+    // Data access, hanterar databaskopplingen
     public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) 
