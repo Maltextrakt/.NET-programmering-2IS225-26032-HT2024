@@ -13,4 +13,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Uploads\Samples\" />
+    <Folder Include="wwwroot\Uploads\Pictures\" />
+  </ItemGroup>
+
 </Project>

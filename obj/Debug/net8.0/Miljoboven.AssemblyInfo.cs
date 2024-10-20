@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Miljoboven")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ceeb22dea36083e9cbc3114eefa0af4162bbf8a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9724191891db5b11c73e4b97e94cd9e1e570d61d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Miljoboven")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Miljoboven")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

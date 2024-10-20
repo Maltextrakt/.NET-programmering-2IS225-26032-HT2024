@@ -68,7 +68,6 @@ namespace Miljoboven.Controllers
 
         public ViewResult Thanks()
         {
-            // Återskapa ärendet från sessionsdatan
             // Återskapa errandet från sessionsdatan
             var errandToSave = HttpContext.Session.Get<Errand>("CoordinatorErrand");
 
@@ -87,6 +86,23 @@ namespace Miljoboven.Controllers
             }
 
             return View();
+        }
+
+        // låter en coordinator assigna departments till ett ärende
+        public IActionResult AssignDepartment(string departmentId, int errandId)
+        {
+            if (departmentId == null)
+            {
+                ModelState.AddModelError("", "Ingen avdelning är vald.");
+                return RedirectToAction("CrimeCoordinator", new { id = errandId });
+            }
+
+            var errand = errandRepository.GetErrandById(errandId);
+
+            errand.DepartmentId = departmentId;
+            errandRepository.SaveErrand(errand);
+
+            return RedirectToAction("StartCoordinator", new {id = errandId});
         }
 	}
 }

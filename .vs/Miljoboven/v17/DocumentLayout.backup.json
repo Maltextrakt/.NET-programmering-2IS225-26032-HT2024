@@ -3,84 +3,115 @@
   "WorkspaceRootPath": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\controllers\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:controllers\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\controllers\\investigatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:controllers\\investigatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\controllers\\coordinatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:controllers\\coordinatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\controllers\\citizencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:controllers\\citizencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\shared\\_userlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\shared\\_userlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\shared\\_managerlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\shared\\_managerlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\shared\\_mainlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\shared\\_mainlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\shared\\_investigatorlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\shared\\_investigatorlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\shared\\_coordinatorlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\shared\\_coordinatorlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\manager\\startmanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\manager\\startmanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\manager\\crimemanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\manager\\crimemanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\investigator\\startinvestigator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\investigator\\startinvestigator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\coordinator\\crimecoordinator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\coordinator\\crimecoordinator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\investigator\\crimeinvestigator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\investigator\\crimeinvestigator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\manager\\crimemanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\manager\\crimemanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\shared\\components\\errand\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\shared\\components\\errand\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\coordinator\\validate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\coordinator\\validate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\investigator\\startinvestigator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\investigator\\startinvestigator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\coordinator\\thanks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\coordinator\\thanks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\models\\eferrandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:models\\eferrandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\coordinator\\startcoordinator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\coordinator\\startcoordinator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\models\\poco\\errand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:models\\poco\\errand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\controllers\\coordinatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:controllers\\coordinatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\controllers\\investigatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:controllers\\investigatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\controllers\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:controllers\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\models\\poco\\picture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:models\\poco\\picture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\components\\errandviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:components\\errandviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\models\\poco\\errandstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:models\\poco\\errandstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\models\\poco\\sample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:models\\poco\\sample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\models\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:models\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\models\\poco\\sequence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:models\\poco\\sequence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\models\\poco\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:models\\poco\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Miljoboven/True/SqlTable/dbo.Errands.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\manager\\startmanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\manager\\startmanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\coordinator\\reportcrime.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\coordinator\\reportcrime.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\coordinator\\crimecoordinator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\coordinator\\crimecoordinator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\coordinator\\startcoordinator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\coordinator\\startcoordinator.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\controllers\\citizencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:controllers\\citizencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\citizen\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\citizen\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\citizen\\faq.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\citizen\\faq.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\citizen\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\citizen\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\citizen\\validate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -91,36 +122,64 @@
       "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\citizen\\thanks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\citizen\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\citizen\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\shared\\_mainlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\shared\\_mainlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\citizen\\faq.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\citizen\\faq.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\shared\\_managerlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\shared\\_managerlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\citizen\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\citizen\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\shared\\_investigatorlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\shared\\_investigatorlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\infrastructure\\sessionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:infrastructure\\sessionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\models\\poco\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:models\\poco\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\shared\\_userlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\shared\\_userlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\shared\\_coordinatorlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\shared\\_coordinatorlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\coordinator\\thanks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\coordinator\\thanks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\views\\coordinator\\validate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:views\\coordinator\\validate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\miljoboven.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:miljoboven.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|c:\\users\\malte\\source\\repos\\miljoboven\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AB2B5A26-1D02-40E2-A0EA-0D0EDCC5F160}|Miljoboven.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -130,7 +189,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -139,367 +198,575 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "_InvestigatorLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Shared\\_InvestigatorLayout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_InvestigatorLayout.cshtml",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Shared\\_InvestigatorLayout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_InvestigatorLayout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T07:56:54.25Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_MainLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Shared\\_MainLayout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_MainLayout.cshtml",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Shared\\_MainLayout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_MainLayout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-21T08:52:14.754Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_ManagerLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Shared\\_ManagerLayout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_ManagerLayout.cshtml",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Shared\\_ManagerLayout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_ManagerLayout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T08:11:42.754Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_UserLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Shared\\_UserLayout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_UserLayout.cshtml",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Shared\\_UserLayout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_UserLayout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-21T09:25:29.843Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CitizenController.cs",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Controllers\\CitizenController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CitizenController.cs",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Controllers\\CitizenController.cs*",
-              "RelativeToolTip": "Controllers\\CitizenController.cs*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T11:05:18.524Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "CoordinatorController.cs",
               "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Controllers\\CoordinatorController.cs",
               "RelativeDocumentMoniker": "Controllers\\CoordinatorController.cs",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Controllers\\CoordinatorController.cs*",
-              "RelativeToolTip": "Controllers\\CoordinatorController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Controllers\\CoordinatorController.cs",
+              "RelativeToolTip": "Controllers\\CoordinatorController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAmwFoAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T11:29:36.284Z",
+              "WhenOpened": "2024-10-02T19:20:31.554Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "InvestigatorController.cs",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Controllers\\InvestigatorController.cs",
-              "RelativeDocumentMoniker": "Controllers\\InvestigatorController.cs",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Controllers\\InvestigatorController.cs*",
-              "RelativeToolTip": "Controllers\\InvestigatorController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T07:59:35.533Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ManagerController.cs",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Controllers\\ManagerController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ManagerController.cs",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Controllers\\ManagerController.cs*",
-              "RelativeToolTip": "Controllers\\ManagerController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T08:10:29.438Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "_CoordinatorLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Shared\\_CoordinatorLayout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_CoordinatorLayout.cshtml",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Shared\\_CoordinatorLayout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_CoordinatorLayout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-21T11:13:30.738Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "StartManager.cshtml",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Manager\\StartManager.cshtml",
-              "RelativeDocumentMoniker": "Views\\Manager\\StartManager.cshtml",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Manager\\StartManager.cshtml",
-              "RelativeToolTip": "Views\\Manager\\StartManager.cshtml",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T08:10:02.793Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CrimeManager.cshtml",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Manager\\CrimeManager.cshtml",
-              "RelativeDocumentMoniker": "Views\\Manager\\CrimeManager.cshtml",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Manager\\CrimeManager.cshtml",
-              "RelativeToolTip": "Views\\Manager\\CrimeManager.cshtml",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T08:09:50.195Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "StartInvestigator.cshtml",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Investigator\\StartInvestigator.cshtml",
-              "RelativeDocumentMoniker": "Views\\Investigator\\StartInvestigator.cshtml",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Investigator\\StartInvestigator.cshtml",
-              "RelativeToolTip": "Views\\Investigator\\StartInvestigator.cshtml",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAgwGMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T07:44:14.661Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "CrimeInvestigator.cshtml",
               "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Investigator\\CrimeInvestigator.cshtml",
               "RelativeDocumentMoniker": "Views\\Investigator\\CrimeInvestigator.cshtml",
               "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Investigator\\CrimeInvestigator.cshtml",
               "RelativeToolTip": "Views\\Investigator\\CrimeInvestigator.cshtml",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAABsAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-22T07:43:59.005Z"
+              "WhenOpened": "2024-10-03T09:02:56.81Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Home\\Login.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Home\\Login.cshtml",
-              "RelativeToolTip": "Views\\Home\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-21T10:46:42.036Z"
+              "DocumentIndex": 6,
+              "Title": "Errand.cs",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Models\\POCO\\Errand.cs",
+              "RelativeDocumentMoniker": "Models\\POCO\\Errand.cs",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Models\\POCO\\Errand.cs",
+              "RelativeToolTip": "Models\\POCO\\Errand.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAA4wCwAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T15:14:01.26Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAsAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-21T08:48:50.439Z"
+              "DocumentIndex": 5,
+              "Title": "EFErrandRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Models\\EFErrandRepository.cs",
+              "RelativeDocumentMoniker": "Models\\EFErrandRepository.cs",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Models\\EFErrandRepository.cs",
+              "RelativeToolTip": "Models\\EFErrandRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T13:54:02.407Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Validate.cshtml",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Coordinator\\Validate.cshtml",
-              "RelativeDocumentMoniker": "Views\\Coordinator\\Validate.cshtml",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Coordinator\\Validate.cshtml",
-              "RelativeToolTip": "Views\\Coordinator\\Validate.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-21T11:10:47.187Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Thanks.cshtml",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Coordinator\\Thanks.cshtml",
-              "RelativeDocumentMoniker": "Views\\Coordinator\\Thanks.cshtml",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Coordinator\\Thanks.cshtml",
-              "RelativeToolTip": "Views\\Coordinator\\Thanks.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-21T11:10:36.691Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "StartCoordinator.cshtml",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Coordinator\\StartCoordinator.cshtml",
-              "RelativeDocumentMoniker": "Views\\Coordinator\\StartCoordinator.cshtml",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Coordinator\\StartCoordinator.cshtml",
-              "RelativeToolTip": "Views\\Coordinator\\StartCoordinator.cshtml",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAAG4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-21T11:10:21.437Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ReportCrime.cshtml",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Coordinator\\ReportCrime.cshtml",
-              "RelativeDocumentMoniker": "Views\\Coordinator\\ReportCrime.cshtml",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Coordinator\\ReportCrime.cshtml",
-              "RelativeToolTip": "Views\\Coordinator\\ReportCrime.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-21T11:10:08.572Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 0,
               "Title": "CrimeCoordinator.cshtml",
               "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Coordinator\\CrimeCoordinator.cshtml",
               "RelativeDocumentMoniker": "Views\\Coordinator\\CrimeCoordinator.cshtml",
               "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Coordinator\\CrimeCoordinator.cshtml",
               "RelativeToolTip": "Views\\Coordinator\\CrimeCoordinator.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAFYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-21T11:09:51.515Z"
+              "WhenOpened": "2024-10-02T20:57:36.805Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Validate.cshtml",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Citizen\\Validate.cshtml",
-              "RelativeDocumentMoniker": "Views\\Citizen\\Validate.cshtml",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Citizen\\Validate.cshtml",
-              "RelativeToolTip": "Views\\Citizen\\Validate.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAACAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "StartInvestigator.cshtml",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Investigator\\StartInvestigator.cshtml",
+              "RelativeDocumentMoniker": "Views\\Investigator\\StartInvestigator.cshtml",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Investigator\\StartInvestigator.cshtml",
+              "RelativeToolTip": "Views\\Investigator\\StartInvestigator.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-21T08:49:46.98Z"
+              "WhenOpened": "2024-10-03T08:46:15.527Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Thanks.cshtml",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Citizen\\Thanks.cshtml",
-              "RelativeDocumentMoniker": "Views\\Citizen\\Thanks.cshtml",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Citizen\\Thanks.cshtml",
-              "RelativeToolTip": "Views\\Citizen\\Thanks.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA9AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CrimeManager.cshtml",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Manager\\CrimeManager.cshtml",
+              "RelativeDocumentMoniker": "Views\\Manager\\CrimeManager.cshtml",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Manager\\CrimeManager.cshtml",
+              "RelativeToolTip": "Views\\Manager\\CrimeManager.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-21T08:49:36.866Z"
+              "WhenOpened": "2024-10-03T09:02:38.708Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Services.cshtml",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Citizen\\Services.cshtml",
-              "RelativeDocumentMoniker": "Views\\Citizen\\Services.cshtml",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Citizen\\Services.cshtml",
-              "RelativeToolTip": "Views\\Citizen\\Services.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Shared\\Components\\Errand\\Default.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Components\\Errand\\Default.cshtml",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Shared\\Components\\Errand\\Default.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Components\\Errand\\Default.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAFIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-21T08:49:22.099Z"
+              "WhenOpened": "2024-10-18T15:13:50.872Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Faq.cshtml",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Citizen\\Faq.cshtml",
-              "RelativeDocumentMoniker": "Views\\Citizen\\Faq.cshtml",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Citizen\\Faq.cshtml",
-              "RelativeToolTip": "Views\\Citizen\\Faq.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-21T10:41:01.226Z"
+              "DocumentIndex": 8,
+              "Title": "InvestigatorController.cs",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Controllers\\InvestigatorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\InvestigatorController.cs",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Controllers\\InvestigatorController.cs",
+              "RelativeToolTip": "Controllers\\InvestigatorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T19:21:28.269Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Contact.cshtml",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Citizen\\Contact.cshtml",
-              "RelativeDocumentMoniker": "Views\\Citizen\\Contact.cshtml",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Citizen\\Contact.cshtml",
-              "RelativeToolTip": "Views\\Citizen\\Contact.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-21T10:43:48.315Z"
+              "DocumentIndex": 9,
+              "Title": "ManagerController.cs",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Controllers\\ManagerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ManagerController.cs",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Controllers\\ManagerController.cs",
+              "RelativeToolTip": "Controllers\\ManagerController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwD4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T19:21:29.069Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-21T08:10:40.926Z"
+              "DocumentIndex": 10,
+              "Title": "Picture.cs",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Models\\POCO\\Picture.cs",
+              "RelativeDocumentMoniker": "Models\\POCO\\Picture.cs",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Models\\POCO\\Picture.cs",
+              "RelativeToolTip": "Models\\POCO\\Picture.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T12:29:29.161Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-21T08:10:31.584Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T08:10:47.19Z"
+              "WhenOpened": "2024-10-03T08:43:56.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ErrandViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Components\\ErrandViewComponent.cs",
+              "RelativeDocumentMoniker": "Components\\ErrandViewComponent.cs",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Components\\ErrandViewComponent.cs",
+              "RelativeToolTip": "Components\\ErrandViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T13:23:26.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ErrandStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Models\\POCO\\ErrandStatus.cs",
+              "RelativeDocumentMoniker": "Models\\POCO\\ErrandStatus.cs",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Models\\POCO\\ErrandStatus.cs",
+              "RelativeToolTip": "Models\\POCO\\ErrandStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T13:55:36.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Sample.cs",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Models\\POCO\\Sample.cs",
+              "RelativeDocumentMoniker": "Models\\POCO\\Sample.cs",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Models\\POCO\\Sample.cs",
+              "RelativeToolTip": "Models\\POCO\\Sample.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T10:05:17.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Sequence.cs",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Models\\POCO\\Sequence.cs",
+              "RelativeDocumentMoniker": "Models\\POCO\\Sequence.cs",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Models\\POCO\\Sequence.cs",
+              "RelativeToolTip": "Models\\POCO\\Sequence.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T10:05:23.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Models\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T10:05:28.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DBInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Models\\DBInitializer.cs",
+              "RelativeDocumentMoniker": "Models\\DBInitializer.cs",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Models\\DBInitializer.cs",
+              "RelativeToolTip": "Models\\DBInitializer.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAgwGQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:09:25.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Models\\POCO\\Department.cs",
+              "RelativeDocumentMoniker": "Models\\POCO\\Department.cs",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Models\\POCO\\Department.cs",
+              "RelativeToolTip": "Models\\POCO\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T15:22:14.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "StartManager.cshtml",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Manager\\StartManager.cshtml",
+              "RelativeDocumentMoniker": "Views\\Manager\\StartManager.cshtml",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Manager\\StartManager.cshtml",
+              "RelativeToolTip": "Views\\Manager\\StartManager.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T08:45:57.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "dbo.Errands [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Miljoboven/True/SqlTable/dbo.Errands.sql",
+              "ToolTip": "dbo.Errands [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-10-19T14:43:38.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ReportCrime.cshtml",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Coordinator\\ReportCrime.cshtml",
+              "RelativeDocumentMoniker": "Views\\Coordinator\\ReportCrime.cshtml",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Coordinator\\ReportCrime.cshtml",
+              "RelativeToolTip": "Views\\Coordinator\\ReportCrime.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T08:37:24.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "StartCoordinator.cshtml",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Coordinator\\StartCoordinator.cshtml",
+              "RelativeDocumentMoniker": "Views\\Coordinator\\StartCoordinator.cshtml",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Coordinator\\StartCoordinator.cshtml",
+              "RelativeToolTip": "Views\\Coordinator\\StartCoordinator.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-02T19:26:05.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CitizenController.cs",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Controllers\\CitizenController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CitizenController.cs",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Controllers\\CitizenController.cs",
+              "RelativeToolTip": "Controllers\\CitizenController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAcwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T09:38:25.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T10:17:58.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Citizen\\Contact.cshtml",
+              "RelativeDocumentMoniker": "Views\\Citizen\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Citizen\\Contact.cshtml",
+              "RelativeToolTip": "Views\\Citizen\\Contact.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T10:45:40.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Faq.cshtml",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Citizen\\Faq.cshtml",
+              "RelativeDocumentMoniker": "Views\\Citizen\\Faq.cshtml",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Citizen\\Faq.cshtml",
+              "RelativeToolTip": "Views\\Citizen\\Faq.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T10:45:41.441Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 28,
+              "Title": "Validate.cshtml",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Citizen\\Validate.cshtml",
+              "RelativeDocumentMoniker": "Views\\Citizen\\Validate.cshtml",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Citizen\\Validate.cshtml",
+              "RelativeToolTip": "Views\\Citizen\\Validate.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T10:35:28.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Thanks.cshtml",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Citizen\\Thanks.cshtml",
+              "RelativeDocumentMoniker": "Views\\Citizen\\Thanks.cshtml",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Citizen\\Thanks.cshtml",
+              "RelativeToolTip": "Views\\Citizen\\Thanks.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T10:45:44.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Services.cshtml",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Citizen\\Services.cshtml",
+              "RelativeDocumentMoniker": "Views\\Citizen\\Services.cshtml",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Citizen\\Services.cshtml",
+              "RelativeToolTip": "Views\\Citizen\\Services.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T10:45:43.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "_MainLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Shared\\_MainLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_MainLayout.cshtml",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Shared\\_MainLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_MainLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T09:29:43.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "_ManagerLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Shared\\_ManagerLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ManagerLayout.cshtml",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Shared\\_ManagerLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ManagerLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T10:40:17.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "_InvestigatorLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Shared\\_InvestigatorLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_InvestigatorLayout.cshtml",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Shared\\_InvestigatorLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_InvestigatorLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T10:07:33.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "SessionExtension.cs",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Infrastructure\\SessionExtension.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\SessionExtension.cs",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Infrastructure\\SessionExtension.cs",
+              "RelativeToolTip": "Infrastructure\\SessionExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T13:23:32.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T08:11:54.779Z"
+              "WhenOpened": "2024-10-03T09:38:28.098Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "style.css",
-              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\wwwroot\\css\\style.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\style.css",
-              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\wwwroot\\css\\style.css",
-              "RelativeToolTip": "wwwroot\\css\\style.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4BAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-21T09:11:50.521Z"
+              "DocumentIndex": 34,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Models\\POCO\\Employee.cs",
+              "RelativeDocumentMoniker": "Models\\POCO\\Employee.cs",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Models\\POCO\\Employee.cs",
+              "RelativeToolTip": "Models\\POCO\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T17:46:47.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T09:38:09.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "Views\\Home\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T10:32:02.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T09:38:13.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "_UserLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Shared\\_UserLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_UserLayout.cshtml",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Shared\\_UserLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_UserLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T10:39:29.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "_CoordinatorLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Shared\\_CoordinatorLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_CoordinatorLayout.cshtml",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Shared\\_CoordinatorLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_CoordinatorLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T09:28:16.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Thanks.cshtml",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Coordinator\\Thanks.cshtml",
+              "RelativeDocumentMoniker": "Views\\Coordinator\\Thanks.cshtml",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Coordinator\\Thanks.cshtml",
+              "RelativeToolTip": "Views\\Coordinator\\Thanks.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T10:46:09.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Validate.cshtml",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Coordinator\\Validate.cshtml",
+              "RelativeDocumentMoniker": "Views\\Coordinator\\Validate.cshtml",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Views\\Coordinator\\Validate.cshtml",
+              "RelativeToolTip": "Views\\Coordinator\\Validate.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T10:34:37.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Miljoboven.csproj",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Miljoboven.csproj",
+              "RelativeDocumentMoniker": "Miljoboven.csproj",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Miljoboven.csproj",
+              "RelativeToolTip": "Miljoboven.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-03T09:41:01.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-03T08:43:55.733Z"
             }
           ]
         }

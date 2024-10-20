@@ -1,4 +1,5 @@
-﻿using Miljoboven.Models.POCO;
+﻿using Microsoft.EntityFrameworkCore;
+using Miljoboven.Models.POCO;
 
 namespace Miljoboven.Models
 {
@@ -11,15 +12,22 @@ namespace Miljoboven.Models
             this.context = ctx;
         }
 
-        public IQueryable<Errand> Errands => context.Errands;
+        //gamla sättet att hämta errands från db
+        //public IQueryable<Errand> Errands => context.Errands;
+
+        public IQueryable<Errand> Errands =>
+            context.Errands.Include(e => e.Samples).Include(e => e.Pictures);
         public IQueryable<Department> Departments => context.Departments;
         public IQueryable<Employee> Employees => context.Employees;
         public IQueryable<ErrandStatus> Statuses => context.ErrandStatuses;
 
-        // Metod för att hämta ett specifikt ärende baserat på ärendenummer (ID)
+        // Metod för att hämta ett specifikt ärende baserat på ärendenummer (ID), eager loading
         public Errand GetErrandById(int id)
         {
-            return context.Errands.FirstOrDefault(e => e.ErrandId == id);
+            return context.Errands
+                .Include(e => e.Samples)
+                .Include(e => e.Pictures)
+                .FirstOrDefault(e => e.ErrandId == id);
         }
         
         //sparar nya errands eller editar existerande errands

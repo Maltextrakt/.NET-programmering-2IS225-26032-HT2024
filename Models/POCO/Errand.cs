@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
 
 namespace Miljoboven.Models.POCO
 {
@@ -39,6 +40,9 @@ namespace Miljoboven.Models.POCO
         public string StatusId { get; set; }
         public string DepartmentId { get; set; }
         public string EmployeeId { get; set; }
+
+        public ICollection<Sample> Samples { get; set; }
+        public ICollection<Picture> Pictures { get; set; }
     }
 
 }

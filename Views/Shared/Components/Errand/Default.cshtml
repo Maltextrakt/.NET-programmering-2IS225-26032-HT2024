@@ -54,11 +54,36 @@
     @* <h3>Bilder och dokument</h3> *@
     <p>
         <span class="label">Provtagning: </span><br />
-        Provtagning.pdf
+        @if (Model.Samples != null && Model.Samples.Any())
+        {
+            <ul>
+                @foreach (var sample in Model.Samples)
+                {
+                    <li><a href="@Url.Content($"~/Uploads/Samples/{Model.ErrandId}/{sample.SampleName}")" target="_blank">@sample.SampleName</a></li>
+                }
+            </ul>
+        } 
+        else
+        {
+        <p>Inga prover har laddats upp.</p>
+        }
     </p>
+    <!-- Display Uploaded Pictures -->
     <p>
         <span class="label">Bilder: </span><br />
-        <img src="~/images/imagetest.jpg" alt="klicka på bilden" />
+        @if (Model.Pictures != null && Model.Pictures.Any())
+        {
+            <ul>
+                @foreach (var picture in Model.Pictures)
+                {
+                    <li><a href="@Url.Content($"~/Uploads/Pictures/{Model.ErrandId}/{picture.PictureName}")" target="_blank">@picture.PictureName</a></li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p>Inga bilder har laddats upp.</p>
+        }
     </p>
 </section>
 

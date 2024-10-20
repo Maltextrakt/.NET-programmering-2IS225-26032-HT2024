@@ -8,21 +8,28 @@
 <h2>Detaljer för ärendet</h2>
 <p class="info">Du är inloggad som samordnare</p>
 
-
-
 @await Component.InvokeAsync("Errand", new { errandId = ViewBag.ErrandId })
 
 <section id="bottomColumn">
     <h3>Redigera ärende</h3>
-    <p>
-        Ange enhet:
-        <select name="department">
-            <option selected="selected">Välj</option>
-            @foreach (var department in Model)
-            {
-                <option value="@department.DepartmentId">@department.DepartmentName</option>
-            }
-        </select>
-    </p>
-    <p><input class="button" type="submit" value="Spara" /></p>
+    <form method="post" asp-controller="Coordinator" asp-action="AssignDepartment">
+        <div>
+            <label for="DepartmentId">Välj avdelning</label>
+            <select name="DepartmentId" class="form-control">
+                <option value="">-- Välj en avdelning --</option>
+                @foreach (var department in Model)
+                {
+                    if (department.DepartmentName != "Småstads kommun")
+                    {
+                        <option value="@department.DepartmentId">@department.DepartmentName</option>
+                    }
+                }
+            </select>
+        </div>
+        <input type="hidden" name="errandId" value="@ViewBag.ErrandId" />
+        <p><input class="button" type="submit" value="Spara" /></p>
+
+    </form>
+    
+    
 </section>
