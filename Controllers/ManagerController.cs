@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Miljoboven.Models;
 
 namespace Miljoboven.Controllers
 {
+    [Authorize(Roles = "Manager")]
 	public class ManagerController : Controller
 	{
         // Fält för att lagra referensen till IErrandRepository, används för att hämta och manipulera ärenden

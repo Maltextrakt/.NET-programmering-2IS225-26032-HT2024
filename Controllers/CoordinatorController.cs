@@ -2,9 +2,11 @@
 using Miljoboven.Models;
 using Miljoboven.Models.POCO;
 using Miljoboven.Infrastructure;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Miljoboven.Controllers
 {
+    [Authorize(Roles = "Coordinator")]
     public class CoordinatorController : Controller
     {
         // Fält för att lagra referensen till IErrandRepository, används för att hämta och manipulera errands

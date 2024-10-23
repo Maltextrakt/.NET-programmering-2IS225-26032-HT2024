@@ -15,6 +15,8 @@ namespace Miljoboven.Models
             
         Errand GetErrandById(int id); //metod för att hämta ett specifikt ärende baserat på ett ID
 
+        IQueryable<Errand> GetErrandsByDepartment(string departmentId);
+
         //Delete
         Errand DeleteErrand(int errandId);
 

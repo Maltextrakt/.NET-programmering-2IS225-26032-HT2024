@@ -29,6 +29,14 @@ namespace Miljoboven.Models
                 .Include(e => e.Pictures)
                 .FirstOrDefault(e => e.ErrandId == id);
         }
+
+        public IQueryable<Errand> GetErrandsByDepartment(string departmentId)
+        {
+            return context.Errands
+                .Include(e => e.Samples)
+                .Include (e => e.Pictures)
+                .Where(e => e.DepartmentId == departmentId);
+        }
         
         //sparar nya errands eller editar existerande errands
         public void SaveErrand(Errand errand)

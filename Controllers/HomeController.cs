@@ -22,11 +22,6 @@ namespace Miljoboven.Controllers
             return View(errand);
         }
 
-
-        public ViewResult Login()
-        {
-            return View();
-        }
     }
        
 }

@@ -6,9 +6,11 @@ using System.Reflection.Metadata;
 using Microsoft.EntityFrameworkCore;
 using Miljoboven.Models.POCO;
 using System.Text;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Miljoboven.Controllers
 {
+    [Authorize(Roles = "Investigator")]
 	public class InvestigatorController : Controller
 	{
         // Fält för att lagra referensen till IErrandRepository, används för att hämta och manipulera errands
