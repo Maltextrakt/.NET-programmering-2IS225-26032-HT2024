@@ -11,9 +11,8 @@
 
 <section id="bottomColumn">
     <h3>Redigera ärende</h3>
-    <form method="post" asp-controller="Manager" asp-action="HandleErrand">
-        <input type="hidden" name="errandId" value="@ViewBag.ErrandId" />
-
+    <form method="post" asp-controller="Manager" asp-action="HandleErrand" asp-route-errandId="@ViewBag.ErrandId">
+        
         <p>
             <label for="employeeId">Ange handläggare:</label>
             <select id="employeeId" name="employeeId" class="form-control">

@@ -1,0 +1,10 @@
+# Ignore Visual Studio temporary files and build artifacts
+.vs/
+bin/
+obj/
+
+# Ignore log files
+*.log
+
+# Ignore other system-specific files (like .DS_Store for macOS)
+*.DS_Store

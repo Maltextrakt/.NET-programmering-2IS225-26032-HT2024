@@ -55,101 +55,37 @@ namespace Miljoboven.Controllers
         [HttpPost]
         public async Task<IActionResult> UpdateErrand(int errandId, string statusId, string information, string events, IFormFile loadSample, IFormFile loadImage)
         {
-            // hämta errandet från repositoryt
-            var errand = errandRepository.GetErrandById(errandId);
-
-            //kolla så att det faktiskt existerar
-            if (errand == null)
-            {
-                return NotFound();
-            }
 
             // uppdatera statusId
             if (!string.IsNullOrEmpty(statusId))
             {
-                errand.StatusId = statusId;
+                errandRepository.UpdateStatus(errandId, statusId);
             }
 
             // Lägg till texten (information) till den redan existerande texten utan att overwrita
             if (!string.IsNullOrEmpty(information))
             {
-                errand.InvestigatorInfo = (errand.InvestigatorInfo ?? "") + Environment.NewLine + information;
+                errandRepository.AddInformation(errandId, information);
             }
 
             // Lägg till events texten till den redan existerande texten utan att overwrita
             if (!string.IsNullOrEmpty(events))
             {
-                errand.InvestigatorAction = (errand.InvestigatorAction ?? "") + Environment.NewLine + events;
+                errandRepository.AddEvents(errandId, events);
             }
 
             // hantera filuppladdning 
             // filuppladdning sample
             if (loadSample != null && loadSample.Length > 0)
             {
-                // Temporär sökväg
-                var uniqueFileName = Path.GetFileNameWithoutExtension(loadSample.FileName) + "_" + Guid.NewGuid() + Path.GetExtension(loadSample.FileName);
-
-                // Skapa ny sökväg i wwwroot för att lagra filen permanent
-                var sampleFinalPath = Path.Combine(webHostEnvironment.WebRootPath, "Uploads", "Samples", errandId.ToString());
-                if (!Directory.Exists(sampleFinalPath))
-                {
-                    Directory.CreateDirectory(sampleFinalPath); // Skapa katalogen om den inte finns
-                }
-
-                // Den slutgiltiga sökvägen till filen
-                var finalSampleFilePath = Path.Combine(sampleFinalPath, uniqueFileName);
-
-                // Spara filen till den slutgiltiga platsen
-                using (var stream = new FileStream(finalSampleFilePath, FileMode.Create))
-                {
-                    await loadSample.CopyToAsync(stream); // Kopiera filen till den slutgiltiga platsen
-                }
-
-                // Spara filmetadata i databasen 
-                var sample = new Sample
-                {
-                    SampleName = uniqueFileName,  
-                    ErrandId = errandId
-                };
-
-                errand.Samples.Add(sample); // Lägg till samplet till ärendet
+                await errandRepository.AddSampleFileAsync(errandId, loadSample, webHostEnvironment);
             }
 
             // Hantera filuppladdning av bild
             if (loadImage != null && loadImage.Length > 0)
             {
-                // Temporär sökväg
-                var uniqueFileName = Path.GetFileNameWithoutExtension(loadImage.FileName) + "_" + Guid.NewGuid() + Path.GetExtension(loadImage.FileName);
-
-                // Skapa ny sökväg i wwwroot för att lagra filen permanent
-                var imageFinalPath = Path.Combine(webHostEnvironment.WebRootPath, "Uploads", "Pictures", errandId.ToString());
-
-                if (!Directory.Exists(imageFinalPath))
-                {
-                    Directory.CreateDirectory(imageFinalPath);  // Skapa katalogen om den inte finns
-                }
-
-                // Den slutgiltiga sökvägen till filen
-                var finalImageFilePath = Path.Combine(imageFinalPath, uniqueFileName);
-
-                // Spara filen till den slutgiltiga platsen
-                using (var stream = new FileStream(finalImageFilePath, FileMode.Create))
-                {
-                    await loadImage.CopyToAsync(stream);  // Kopiera filen till den slutgiltiga platsen
-                }
-
-                // Spara filmetadata i databasen 
-                var picture = new Picture
-                {
-                    PictureName = uniqueFileName,  
-                    ErrandId = errandId
-                };
-
-                errand.Pictures.Add(picture);  // Lägg till bilden till ärendet
+                await errandRepository.AddImageFileAsync(errandId, loadImage, webHostEnvironment);
             }
-
-            // spara det nu uppdaterade errandet till databasen
-            errandRepository.SaveErrand(errand);
 
             return RedirectToAction("CrimeInvestigator", new {id = errandId});
         }

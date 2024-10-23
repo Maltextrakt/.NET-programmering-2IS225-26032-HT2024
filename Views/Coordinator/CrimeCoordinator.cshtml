@@ -12,7 +12,7 @@
 
 <section id="bottomColumn">
     <h3>Redigera ärende</h3>
-    <form method="post" asp-controller="Coordinator" asp-action="AssignDepartment">
+    <form method="post" asp-controller="Coordinator" asp-action="AssignDepartment" asp-route-errandId="@ViewBag.ErrandId">
         <div>
             <label for="DepartmentId">Välj avdelning</label>
             <select name="DepartmentId" class="form-control">
@@ -26,7 +26,6 @@
                 }
             </select>
         </div>
-        <input type="hidden" name="errandId" value="@ViewBag.ErrandId" />
         <p><input class="button" type="submit" value="Spara" /></p>
 
     </form>
