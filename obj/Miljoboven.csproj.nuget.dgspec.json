@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\malte\\source\\repos\\Miljoboven\\Miljoboven.csproj": {}
+    "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Miljoboven.csproj": {}
   },
   "projects": {
-    "C:\\Users\\malte\\source\\repos\\Miljoboven\\Miljoboven.csproj": {
+    "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Miljoboven.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\malte\\source\\repos\\Miljoboven\\Miljoboven.csproj",
+        "projectUniqueName": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Miljoboven.csproj",
         "projectName": "Miljoboven",
-        "projectPath": "C:\\Users\\malte\\source\\repos\\Miljoboven\\Miljoboven.csproj",
-        "packagesPath": "C:\\Users\\malte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\malte\\source\\repos\\Miljoboven\\obj\\",
+        "projectPath": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\Miljoboven.csproj",
+        "packagesPath": "C:\\Users\\Malte\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Malte\\source\\repos\\Miljoboven\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\malte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Malte\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,6 +45,18 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

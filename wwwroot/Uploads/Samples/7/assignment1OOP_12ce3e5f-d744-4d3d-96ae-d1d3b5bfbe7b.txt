@@ -1,0 +1,170 @@
+package week3.assignment1;
+
+import java.util.Scanner;
+
+public class task6Main {
+    static Scanner input = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int optionInput = 0;
+
+        int inputstudentScores[] = new int[7];
+        inputstudentScores = studentScores(inputstudentScores);
+
+
+        while (optionInput != 6) {
+            optionInput = menu();
+            switch (optionInput) {
+                case 1 -> inputstudentScores = studentScores(inputstudentScores);
+                case 2 -> meanCalculator(inputstudentScores);
+                case 3 -> highestLowest(inputstudentScores);
+                /*case 4 ->;
+                case 5 ->;*/
+                case 6 -> System.out.println("Thank you for using our grading system. Have a nice day!");
+                default -> System.out.println("Error - Invalid value. Please type between 1 and 6");
+            }
+
+
+        }
+
+
+    }
+
+    public static int menu() {
+        System.out.printf("\nWelcome to the menu. Choose one of the options below:\n" +
+                "1. Register new scores for students.\n" +
+                "2. Calculate the mean of the entered scores.\n" +
+                "3. Find the two highest and two lowest scores.\n" +
+                "4. Find the highest score and its position.\n" +
+                "5. Collect hashtags from a post.\n" +
+                "6. To exit.\n" +
+                "\n" +
+                "Type your option:\n ");
+
+
+        int optionInput = input.nextInt();
+        input.nextLine();
+        return optionInput;
+
+    }
+
+    public static int[] studentScores(int[] studentScores) {
+
+
+        for (int i = 0; i < studentScores.length; i++) {
+
+            do {
+                if (i == 0) {
+                    System.out.printf("Enter the score for the %dst student ", i + 1);
+                    studentScores[i] = input.nextInt();
+                    input.nextLine();
+                } else if (i == 1) {
+                    System.out.printf("Enter the score for the %dnd student ", i + 1);
+                    studentScores[i] = input.nextInt();
+                    input.nextLine();
+                } else if (i == 2) {
+                    System.out.printf("Enter the score for the %drd student ", i + 1);
+                    studentScores[i] = input.nextInt();
+                    input.nextLine();
+                } else {
+                    System.out.printf("Enter the score for the %dth student ", i + 1);
+                    studentScores[i] = input.nextInt();
+                    input.nextLine();
+                }
+                if (studentScores[i] < 0 || studentScores[i] > 100) {
+                    System.out.println("Error - Input out of bound. Score can only be between 0  and 100.");
+                }
+
+            } while (studentScores[i] <= 0 || studentScores[i] >= 100);
+        }
+        System.out.println("Thank you for your input. Your entered scores are: ");
+
+        for (int i = 0; i < studentScores.length; i++) {
+
+            if (i < studentScores.length - 1) {
+                System.out.printf("%d, ", studentScores[i]);
+            } else {
+                System.out.print(studentScores[i]);
+            }
+        }
+        System.out.println();
+        return studentScores;
+    }
+
+    public static void meanCalculator(int[] studentScores) {
+
+        int arraySum = 0;
+
+        for (int i = 0; i < studentScores.length; i++) {
+            arraySum = arraySum + studentScores[i];
+        }
+        double arrayMean = (arraySum / studentScores.length);
+        System.out.printf("The mean of the numbers is %.2f \n", arrayMean);
+    }
+
+    public static void highestLowest(int[] studentScores) {
+
+        int highest1 = 0;
+        int highest2 = 0;
+        int lowest1 = 100;
+        int lowest2 = 100;
+        int locationHighest = 0;
+        int locationLowest = 0;
+
+
+        for (int i = 0; i < studentScores.length; i++) {
+            if (highest1 < studentScores[i]) {
+                highest1 = studentScores[i];
+                locationHighest = i;
+            }
+        }
+        studentScores[locationHighest] = 0;
+
+        for (int i = 0; i < studentScores.length; i++) {
+            if (highest2 < studentScores[i]) {
+                highest2 = studentScores[i];
+
+            }
+        }
+        studentScores[locationHighest] = highest1;
+
+        for (int i = 0; i < studentScores.length; i++) {
+            if (lowest1 > studentScores[i]) {
+                lowest1 = studentScores[i];
+                locationLowest = i;
+            }
+        }
+        studentScores[locationLowest] = 100;
+
+
+        for (int i = 0; i < studentScores.length; i++) {
+            if (lowest2 > studentScores[i]) {
+                lowest2 = studentScores[i];
+            }
+        }
+        studentScores[locationLowest] = lowest1;
+
+        System.out.println("The two lowest scores provided are " + lowest1 + " and " + lowest2);
+        System.out.println("The two highest scores provided are " + highest1 + " and " + highest2);
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

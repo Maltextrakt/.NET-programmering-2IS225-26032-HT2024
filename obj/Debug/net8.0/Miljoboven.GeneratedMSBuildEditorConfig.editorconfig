@@ -9,107 +9,107 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Miljoboven
 build_property.RootNamespace = Miljoboven
-build_property.ProjectDir = C:\Users\malte\source\repos\Miljoboven\
+build_property.ProjectDir = C:\Users\Malte\source\repos\Miljoboven\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\malte\source\repos\Miljoboven
+build_property.MSBuildProjectDirectory = C:\Users\Malte\source\repos\Miljoboven
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/malte/source/repos/Miljoboven/Views/Citizen/Contact.cshtml]
+[C:/Users/Malte/source/repos/Miljoboven/Views/Citizen/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aXplblxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/malte/source/repos/Miljoboven/Views/Citizen/Faq.cshtml]
+[C:/Users/Malte/source/repos/Miljoboven/Views/Citizen/Faq.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aXplblxGYXEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/malte/source/repos/Miljoboven/Views/Citizen/Services.cshtml]
+[C:/Users/Malte/source/repos/Miljoboven/Views/Citizen/Services.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aXplblxTZXJ2aWNlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/malte/source/repos/Miljoboven/Views/Citizen/Thanks.cshtml]
+[C:/Users/Malte/source/repos/Miljoboven/Views/Citizen/Thanks.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aXplblxUaGFua3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/malte/source/repos/Miljoboven/Views/Citizen/Validate.cshtml]
+[C:/Users/Malte/source/repos/Miljoboven/Views/Citizen/Validate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aXplblxWYWxpZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/malte/source/repos/Miljoboven/Views/Coordinator/CrimeCoordinator.cshtml]
+[C:/Users/Malte/source/repos/Miljoboven/Views/Coordinator/CrimeCoordinator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29vcmRpbmF0b3JcQ3JpbWVDb29yZGluYXRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/malte/source/repos/Miljoboven/Views/Coordinator/ReportCrime.cshtml]
+[C:/Users/Malte/source/repos/Miljoboven/Views/Coordinator/ReportCrime.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29vcmRpbmF0b3JcUmVwb3J0Q3JpbWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/malte/source/repos/Miljoboven/Views/Coordinator/StartCoordinator.cshtml]
+[C:/Users/Malte/source/repos/Miljoboven/Views/Coordinator/StartCoordinator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29vcmRpbmF0b3JcU3RhcnRDb29yZGluYXRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/malte/source/repos/Miljoboven/Views/Coordinator/Thanks.cshtml]
+[C:/Users/Malte/source/repos/Miljoboven/Views/Coordinator/Thanks.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29vcmRpbmF0b3JcVGhhbmtzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/malte/source/repos/Miljoboven/Views/Coordinator/Validate.cshtml]
+[C:/Users/Malte/source/repos/Miljoboven/Views/Coordinator/Validate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29vcmRpbmF0b3JcVmFsaWRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/malte/source/repos/Miljoboven/Views/Home/Index.cshtml]
+[C:/Users/Malte/source/repos/Miljoboven/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/malte/source/repos/Miljoboven/Views/Home/Login.cshtml]
+[C:/Users/Malte/source/repos/Miljoboven/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/malte/source/repos/Miljoboven/Views/Investigator/CrimeInvestigator.cshtml]
+[C:/Users/Malte/source/repos/Miljoboven/Views/Investigator/CrimeInvestigator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0aWdhdG9yXENyaW1lSW52ZXN0aWdhdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/malte/source/repos/Miljoboven/Views/Investigator/StartInvestigator.cshtml]
+[C:/Users/Malte/source/repos/Miljoboven/Views/Investigator/StartInvestigator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0aWdhdG9yXFN0YXJ0SW52ZXN0aWdhdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/malte/source/repos/Miljoboven/Views/Manager/CrimeManager.cshtml]
+[C:/Users/Malte/source/repos/Miljoboven/Views/Manager/CrimeManager.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxDcmltZU1hbmFnZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/malte/source/repos/Miljoboven/Views/Manager/StartManager.cshtml]
+[C:/Users/Malte/source/repos/Miljoboven/Views/Manager/StartManager.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxTdGFydE1hbmFnZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/malte/source/repos/Miljoboven/Views/Shared/Components/Errand/Default.cshtml]
+[C:/Users/Malte/source/repos/Miljoboven/Views/Shared/Components/Errand/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRXJyYW5kXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/malte/source/repos/Miljoboven/Views/Shared/_CoordinatorLayout.cshtml]
+[C:/Users/Malte/source/repos/Miljoboven/Views/Shared/_CoordinatorLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db29yZGluYXRvckxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/malte/source/repos/Miljoboven/Views/Shared/_InvestigatorLayout.cshtml]
+[C:/Users/Malte/source/repos/Miljoboven/Views/Shared/_InvestigatorLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9JbnZlc3RpZ2F0b3JMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/malte/source/repos/Miljoboven/Views/Shared/_MainLayout.cshtml]
+[C:/Users/Malte/source/repos/Miljoboven/Views/Shared/_MainLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NYWluTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/malte/source/repos/Miljoboven/Views/Shared/_ManagerLayout.cshtml]
+[C:/Users/Malte/source/repos/Miljoboven/Views/Shared/_ManagerLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NYW5hZ2VyTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/malte/source/repos/Miljoboven/Views/Shared/_UserLayout.cshtml]
+[C:/Users/Malte/source/repos/Miljoboven/Views/Shared/_UserLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/malte/source/repos/Miljoboven/Views/_ViewImports.cshtml]
+[C:/Users/Malte/source/repos/Miljoboven/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/malte/source/repos/Miljoboven/Views/_ViewStart.cshtml]
+[C:/Users/Malte/source/repos/Miljoboven/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

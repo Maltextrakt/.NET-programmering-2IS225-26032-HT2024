@@ -1,0 +1,14 @@
+PRACTICE FOR THE EXAM:
+
+while(getchar() != '\n');  //  clears buffer input
+
+
+fgets(input, sizeof(input), stdin);   // stores input from keyboard in standard input buffer
+
+
+void swap(char *x, char *y){		// swap function that swaps 2 values with pointers
+	char temp;
+	temp = *x;
+	*x = *y;
+	*y = temp;
+}
