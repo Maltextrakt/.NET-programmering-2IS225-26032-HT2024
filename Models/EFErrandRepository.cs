@@ -86,5 +86,128 @@ namespace Miljoboven.Models
             context.SaveChanges();
             return dbEntry;
         }
+
+        // Assigna investigator och uppdatera status
+        public void AssignInvestigator(int errandId, string employeeId)
+        {
+            var errand = context.Errands.FirstOrDefault(e => e.ErrandId == errandId);
+            if (errand != null)
+            {
+                errand.EmployeeId = employeeId;
+                errand.StatusId = "S_A";  // Under utredning (Under investigation)
+                errand.InvestigatorInfo = "";
+                context.SaveChanges();
+            }
+        }
+
+        // Sätt ärendet till ingen action
+        public void SetNoAction(int errandId, string reason)
+        {
+            var errand = context.Errands.FirstOrDefault(e => e.ErrandId == errandId);
+            if (errand != null)
+            {
+                errand.StatusId = "S_B";  // Ingen åtgärd (No action)
+                errand.InvestigatorInfo = reason;
+                errand.EmployeeId = null;  // Ingen handläggare (No investigator)
+                context.SaveChanges();
+            }
+        }
+
+        // Lägg till information utan att skriva över 
+        public void AddInformation(int errandId, string information)
+        {
+            var errand = GetErrandById(errandId);
+            if (errand != null && !string.IsNullOrEmpty(information))
+            {
+                errand.InvestigatorInfo = (errand.InvestigatorInfo ?? "") + Environment.NewLine + information;
+                context.SaveChanges();
+            }
+        }
+
+        // Lägg till events text utan att skriva över
+        public void AddEvents(int errandId, string events)
+        {
+            var errand = GetErrandById(errandId);
+            if (errand != null && !string.IsNullOrEmpty(events))
+            {
+                errand.InvestigatorAction = (errand.InvestigatorAction ?? "") + Environment.NewLine + events;
+                context.SaveChanges();
+            }
+        }
+
+        // Hantera sample filuppladdning
+        public async Task AddSampleFileAsync(int errandId, IFormFile sampleFile, IWebHostEnvironment webHostEnvironment)
+        {
+            var errand = GetErrandById(errandId);
+            if (errand != null && sampleFile != null)
+            {
+                var uniqueFileName = Path.GetFileNameWithoutExtension(sampleFile.FileName) + "_" + Guid.NewGuid() + Path.GetExtension(sampleFile.FileName);
+                var sampleFinalPath = Path.Combine(webHostEnvironment.WebRootPath, "Uploads", "Samples", errandId.ToString());
+                Directory.CreateDirectory(sampleFinalPath);
+                var finalFilePath = Path.Combine(sampleFinalPath, uniqueFileName);
+
+                using (var stream = new FileStream(finalFilePath, FileMode.Create))
+                {
+                    await sampleFile.CopyToAsync(stream);
+                }
+
+                var sample = new Sample
+                {
+                    SampleName = uniqueFileName,
+                    ErrandId = errandId
+                };
+
+                errand.Samples.Add(sample);
+                context.SaveChanges();
+            }
+        }
+
+        // Hantera bilduppladdning
+        public async Task AddImageFileAsync(int errandId, IFormFile imageFile, IWebHostEnvironment webHostEnvironment)
+        {
+            var errand = GetErrandById(errandId);
+            if (errand != null && imageFile != null)
+            {
+                var uniqueFileName = Path.GetFileNameWithoutExtension(imageFile.FileName) + "_" + Guid.NewGuid() + Path.GetExtension(imageFile.FileName);
+                var imageFinalPath = Path.Combine(webHostEnvironment.WebRootPath, "Uploads", "Pictures", errandId.ToString());
+                Directory.CreateDirectory(imageFinalPath);
+                var finalFilePath = Path.Combine(imageFinalPath, uniqueFileName);
+
+                using (var stream = new FileStream(finalFilePath, FileMode.Create))
+                {
+                    await imageFile.CopyToAsync(stream);
+                }
+
+                var picture = new Picture
+                {
+                    PictureName = uniqueFileName,
+                    ErrandId = errandId
+                };
+
+                errand.Pictures.Add(picture);
+                context.SaveChanges();
+            }
+        }
+
+        public void UpdateStatus(int errandId, string statusId)
+        {
+            var errand = context.Errands.FirstOrDefault(e => e.ErrandId == errandId);
+            if (errand != null)
+            {
+                errand.StatusId = statusId;
+                context.SaveChanges();
+            }
+        }
+
+        public void AssignDepartment(int errandId, string departmentId)
+        {
+            var errand = context.Errands.FirstOrDefault(e => e.ErrandId == errandId);
+            if (errand != null)
+            {
+                errand.DepartmentId = departmentId;
+                context.SaveChanges();
+            }
+        }
     }
 }
+

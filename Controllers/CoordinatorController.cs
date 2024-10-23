@@ -97,10 +97,7 @@ namespace Miljoboven.Controllers
                 return RedirectToAction("CrimeCoordinator", new { id = errandId });
             }
 
-            var errand = errandRepository.GetErrandById(errandId);
-
-            errand.DepartmentId = departmentId;
-            errandRepository.SaveErrand(errand);
+            errandRepository.AssignDepartment(errandId, departmentId);
 
             return RedirectToAction("StartCoordinator", new {id = errandId});
         }

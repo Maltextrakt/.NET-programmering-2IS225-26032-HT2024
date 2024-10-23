@@ -17,7 +17,7 @@
 <section id="bottomColumn">
     <h3>Redigera ärende</h3>
 
-    <form asp-controller="Investigator" asp-action="UpdateErrand" method="post" enctype="multipart/form-data">
+    <form asp-controller="Investigator" asp-action="UpdateErrand" asp-route-errandId="@ViewBag.ErrandId" method="post" enctype="multipart/form-data">
         <p class="label">Ytterligare information:</p>
         <textarea name="information" rows="5" cols="60"></textarea>
 
@@ -39,7 +39,6 @@
             }
         </select>
 
-        <input type="hidden" name="errandId" value="@ViewBag.ErrandId" />
         <p>
             <input class="button" type="submit" value="Spara ändringarna" />
         </p>

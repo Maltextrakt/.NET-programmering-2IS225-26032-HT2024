@@ -37,12 +37,6 @@ namespace Miljoboven.Controllers
 
         public IActionResult HandleErrand(int errandId, bool noAction, string reason, string? employeeId)
         {
-            var errand = errandRepository.GetErrandById(errandId);
-
-            if (errand == null)
-            {
-                return NotFound(); // om inget errand hittas
-            }
 
             if (noAction)
             {
@@ -52,15 +46,11 @@ namespace Miljoboven.Controllers
                     return RedirectToAction("CrimeManager", new { id = errandId });
                 }
 
-                errand.StatusId = "S_B"; // sätt statusId till S_B för ingen åtgärd
-                errand.InvestigatorInfo = reason;
-                errand.EmployeeId = null; // ingen utredare tillsatt
+                errandRepository.SetNoAction(errandId, reason);
             }
-            else if (employeeId != null)
+            else if (!string.IsNullOrEmpty(employeeId))
             {
-                errand.EmployeeId = employeeId;
-                errand.StatusId = "S_A";
-                errand.InvestigatorInfo = "";
+                errandRepository.AssignInvestigator(errandId, employeeId);
             }
             else
             {
@@ -69,7 +59,7 @@ namespace Miljoboven.Controllers
                 return RedirectToAction("CrimeManager", new { id = errandId });
             }
 
-            errandRepository.SaveErrand(errand);
+            
             return RedirectToAction("CrimeManager", new { id = errandId });
         }
         
