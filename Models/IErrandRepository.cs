@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Query.Internal;
 using Miljoboven.Models.POCO;
+using Miljoboven.Models.ViewModels;
 
 namespace Miljoboven.Models
 {
@@ -15,7 +16,12 @@ namespace Miljoboven.Models
             
         Errand GetErrandById(int id); //metod för att hämta ett specifikt ärende baserat på ett ID
 
+        IQueryable<MyErrand> GetInvestigatorErrands(string employeeId, string statusId, string refnumber);
         IQueryable<Errand> GetErrandsByDepartment(string departmentId);
+
+        IEnumerable<MyErrand> GetCoordinatorErrands(string statusId, string departmentId, string refnumber);
+        IEnumerable<MyErrand> GetManagerErrands(string departmentId, string employeeName, string statusId, string refnumber);
+        IEnumerable<Employee> GetDepartmentInvestigators(string departmentId);
 
         //Delete
         Errand DeleteErrand(int errandId);

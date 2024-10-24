@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Employee>
+﻿@model Miljoboven.Models.ViewModels.ManagerViewModel
 
 @{
     Layout = "_ManagerLayout";
@@ -7,22 +7,21 @@
 <h2>Detaljer för ärendet</h2>
 <p class="info">Du är inloggad som avdelningschef</p>
 
-@await Component.InvokeAsync("Errand", new { errandId = ViewBag.ErrandId })
+@await Component.InvokeAsync("Errand", new { errandId = Model.Errand.ErrandId })
 
 <section id="bottomColumn">
     <h3>Redigera ärende</h3>
-    <form method="post" asp-controller="Manager" asp-action="HandleErrand" asp-route-errandId="@ViewBag.ErrandId">
+    <form method="post" asp-controller="Manager" asp-action="HandleErrand" asp-route-errandId="@Model.Errand.ErrandId">
         
         <p>
-            <label for="employeeId">Ange handläggare:</label>
-            <select id="employeeId" name="employeeId" class="form-control">
+            <label for="investigator">Ange handläggare:</label>
+            <select id="investigator" name="employeeId" class="form-control">
                 <option value="">Välj</option>
-                @foreach (var employee in Model)
+                @foreach (var investigator in Model.Investigators)
                 {
-                    if (employee.RoleTitle == "Investigator")
-                    {
-                        <option value="@employee.EmployeeId">@employee.EmployeeName</option>
-                    }
+                    
+                        <option value="@investigator.EmployeeId">@investigator.EmployeeName</option>
+                    
                 }
             </select>
         </p>

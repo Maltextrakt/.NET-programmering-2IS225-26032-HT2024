@@ -1,46 +1,48 @@
-﻿@model IErrandRepository
-@{
+﻿@model Miljoboven.Models.ViewModels.CoordinatorViewModel
+
+ @{
     Layout = "_CoordinatorLayout";
 }
 
 <h2>Ärenden</h2>
 <p class="info">Du är inloggad som samordnare</p>
 
-<table id="managerForm">
-	<tr>
-		<td class="label">Välj status:</td>
-		<td class="label">Välj avdelning:</td>
-		<td>&nbsp;</td>
-		<td class="label">Ärendenummer:</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr>
-		<td>
-			<select name="status">
-				<option selected="selected">Välj alla</option>
-				@foreach (var status in Model.Statuses)
-				{
-					<option value="@status.StatusId">@status.StatusName</option>
-				}
-			</select>
-		</td>
-		<td>
-			<select name="department">
-				<option selected="selected">Välj alla</option>
-				@foreach (var errand in Model.Departments)
-				{
-					if (!string.IsNullOrEmpty(errand.DepartmentId))
+<form method="get" asp-controller="Coordinator" asp-action="StartCoordinator">
+	<table id="managerForm">
+		<tr>
+			<td class="label">Välj status:</td>
+			<td class="label">Välj avdelning:</td>
+			<td>&nbsp;</td>
+			<td class="label">Ärendenummer:</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				<select name="statusId">
+					<option selected="selected">Välj alla</option>
+					@foreach (var status in Model.Statuses)
 					{
-						<option value="@errand.DepartmentId">@errand.DepartmentName</option>
+						<option value="@status.StatusName">@status.StatusName</option>
 					}
-				}
-			</select>
-		</td>
-		<td><input class="button" type="submit" value="Hämta lista" /></td>
-		<td><input name="casenumber" /></td>
-		<td><input class="button" type="submit" value="Sök" /></td>
-	</tr>
-</table>
+				</select>
+			</td>
+			<td>
+				<select name="departmentId">
+					<option value="Välj alla" selected="selected">Välj alla</option>
+					@foreach (var department in Model.Departments)
+					{
+						
+							<option value="@department.DepartmentName">@department.DepartmentName</option>
+						
+					}
+				</select>
+			</td>
+			<td><input class="button" type="submit" value="Hämta lista" /></td>
+			<td><input name="casenumber" /></td>
+			<td><input class="button" type="submit" value="Sök" /></td>
+		</tr>
+	</table>
+</form>
 
 <!--Nedan ser man en lista på ärenden-->
 <table>
@@ -52,18 +54,28 @@
 		<th>Avdelning</th>
 		<th>Handläggare</th>
 	</tr>
-	@foreach (var errand in Model.Errands)
+	@if (Model.Errands.Any())
+	{
+		@foreach (var errand in Model.Errands)
+		{
+			<tr>
+				<td>@errand.DateOfObservation.ToString("yyyy-MM-dd")</td>
+				<td>
+				
+					<a asp-controller="Coordinator" asp-action="CrimeCoordinator" asp-route-id="@errand.ErrandId">@errand.RefNumber</a>
+				</td>
+				<td>@errand.TypeOfCrime</td>
+				<td>@errand.StatusName</td>
+				<td>@errand.DepartmentName</td>
+				<td>@errand.EmployeeName</td>
+			</tr>
+		}
+
+	}
+	else
 	{
 		<tr>
-			<td>@errand.DateOfObservation.ToString("yyyy-MM-dd")</td>
-			<td>
-				
-				<a asp-controller="Coordinator" asp-action="CrimeCoordinator" asp-route-id="@errand.ErrandId">@errand.RefNumber</a>
-			</td>
-			<td>@errand.TypeOfCrime</td>
-			<td>@errand.StatusId</td>
-			<td>@errand.DepartmentId</td>
-			<td>@(!string.IsNullOrEmpty(errand.EmployeeId) ? errand.EmployeeId : "Ingen utredare satt")</td>
+				<td colspan="6">Inga ärenden funna</td>
 		</tr>
 	}
 </table>

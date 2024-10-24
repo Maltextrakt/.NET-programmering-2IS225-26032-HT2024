@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Miljoboven.Models.POCO;
+using Miljoboven.Models.ViewModels;
+using System.Security.Cryptography;
 
 namespace Miljoboven.Models
 {
@@ -215,6 +217,142 @@ namespace Miljoboven.Models
                 errand.DepartmentId = departmentId;
                 context.SaveChanges();
             }
+        }
+
+        public IEnumerable<MyErrand> GetCoordinatorErrands(string statusId, string departmentId, string refnumber)
+        {
+            var errandList = from err in Errands
+                join stat in context.ErrandStatuses on err.StatusId equals stat.StatusId
+
+                join dep in Departments on err.DepartmentId equals dep.DepartmentId
+                into departmentErrand from deptE in departmentErrand.DefaultIfEmpty()
+
+                join em in Employees on err.EmployeeId equals em.EmployeeId 
+                into employeeErrand from empE in employeeErrand.DefaultIfEmpty()
+
+                orderby err.RefNumber descending
+
+                select new MyErrand
+                {
+                    DateOfObservation = err.DateOfObservation,
+                    ErrandId = err.ErrandId,
+                    RefNumber = err.RefNumber,
+                    TypeOfCrime = err.TypeOfCrime,
+                    StatusName = stat.StatusName,
+                    DepartmentName = (err.DepartmentId == null ? "ej tillsatt" : deptE.DepartmentName),
+                    EmployeeName = (err.EmployeeId == null ? "ej tillsatt" : empE.EmployeeName)
+                };
+
+			// Apply status filter if provided
+			if (!string.IsNullOrEmpty(statusId) && statusId != "Välj alla")
+			{
+				errandList = errandList.Where(e => e.StatusName == statusId);
+			}
+
+			// Apply department filter if provided
+			if (!string.IsNullOrEmpty(departmentId) && departmentId != "Välj alla")
+			{
+				errandList = errandList.Where(e => e.DepartmentName == departmentId);
+			}
+
+			// Apply refnumber filter if provided
+			if (!string.IsNullOrEmpty(refnumber))
+			{
+				errandList = errandList.Where(e => e.RefNumber == refnumber);
+			}
+
+
+			return errandList.ToList();
+        }
+
+        // Filtrera errands som en manager ska se (bara de som är för den inloggade managerns department)
+        public IEnumerable<MyErrand> GetManagerErrands(string departmentId, string employeeName, string statusId, string refnumber)
+        {
+            var errandList = from err in Errands
+                             join stat in context.ErrandStatuses on err.StatusId equals stat.StatusId
+                             join dep in Departments on err.DepartmentId equals dep.DepartmentId
+                             into departmentErrand
+                             from deptE in departmentErrand.DefaultIfEmpty()
+                             join em in Employees on err.EmployeeId equals em.EmployeeId
+                             into employeeErrand
+                             from empE in employeeErrand.DefaultIfEmpty()
+                             where err.DepartmentId == departmentId // filtrera på managerns department
+                             orderby err.RefNumber descending
+                             select new MyErrand
+                             {
+                                 DateOfObservation = err.DateOfObservation,
+                                 ErrandId = err.ErrandId,
+                                 RefNumber = err.RefNumber,
+                                 TypeOfCrime = err.TypeOfCrime,
+                                 StatusName = stat.StatusName,
+                                 DepartmentName = (err.DepartmentId == null ? "ej tillsatt" : deptE.DepartmentName),
+                                 EmployeeName = (err.EmployeeId == null ? "ej tillsatt" : empE.EmployeeName)
+                             };
+
+			// filtrera på status
+			if (!string.IsNullOrEmpty(statusId) && statusId != "Välj alla")
+			{
+				errandList = errandList.Where(e => e.StatusName == statusId);
+			}
+
+			// filtrera på investigator
+			if (!string.IsNullOrEmpty(employeeName) && employeeName != "Välj alla")
+			{
+				errandList = errandList.Where(e => e.EmployeeName == employeeName);
+			}
+
+			// filtrera på refnumber sökning
+			if (!string.IsNullOrEmpty(refnumber))
+			{
+				errandList = errandList.Where(e => e.RefNumber == refnumber);
+			}
+
+			return errandList.ToList();
+        }
+
+        //Filtrera investigators på department och roletitle (används för managers)
+        public IEnumerable<Employee> GetDepartmentInvestigators(string departmentId)
+        {
+            return Employees.Where(e => e.DepartmentId == departmentId && e.RoleTitle == "Investigator"); 
+        }
+
+        public IQueryable<MyErrand> GetInvestigatorErrands(string employeeId, string statusId, string refnumber)
+        {
+            var errandList = from err in Errands
+                             join stat in context.ErrandStatuses on err.StatusId equals stat.StatusId
+                             join dep in Departments on err.DepartmentId equals dep.DepartmentId
+                             into departmentErrand
+                             from deptE in departmentErrand.DefaultIfEmpty()
+                             join em in Employees on err.EmployeeId equals em.EmployeeId
+                             into employeeErrand
+                             from empE in employeeErrand.DefaultIfEmpty()
+                             where err.EmployeeId == employeeId // Only show errands assigned to the logged-in investigator
+                             orderby err.RefNumber descending
+                             select new MyErrand
+                             {
+                                 DateOfObservation = err.DateOfObservation,
+                                 ErrandId = err.ErrandId,
+                                 RefNumber = err.RefNumber,
+                                 TypeOfCrime = err.TypeOfCrime,
+                                 StatusName = stat.StatusName,
+                                 DepartmentName = (err.DepartmentId == null ? "ej tillsatt" : deptE.DepartmentName),
+                                 EmployeeName = (err.EmployeeId == null ? "ej tillsatt" : empE.EmployeeName)
+                             };
+
+			// filtrera på status
+			if (!string.IsNullOrEmpty(statusId) && statusId != "Välj alla")
+			{
+				errandList = errandList.Where(e => e.StatusName == statusId);
+			}
+
+
+			// filtrera på refnumber sökning
+			if (!string.IsNullOrEmpty(refnumber))
+			{
+				errandList = errandList.Where(e => e.RefNumber == refnumber);
+			}
+
+			return errandList;
         }
     }
 }

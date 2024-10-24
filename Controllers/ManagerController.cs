@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Miljoboven.Models;
+using Miljoboven.Models.ViewModels;
 
 namespace Miljoboven.Controllers
 {
@@ -9,33 +10,76 @@ namespace Miljoboven.Controllers
 	{
         // Fält för att lagra referensen till IErrandRepository, används för att hämta och manipulera ärenden
         private readonly IErrandRepository errandRepository;
+        // lagra referense till IHttpContextAccessor, används för att hämta data om inloggade användare
+        private readonly IHttpContextAccessor contextAcc;
 
-        // Konstruktor för att dependency injecta IErrandRepository
-        public ManagerController(IErrandRepository errandRepository)
+        // Konstruktor för att dependency injecta IErrandRepository och IHttpContextAccessor
+        public ManagerController(IErrandRepository errandRepository, IHttpContextAccessor httpContextAccessor)
 		{
 			this.errandRepository = errandRepository;
+            contextAcc = httpContextAccessor;
 		}
 
         // Visar detaljer för ett specifikt ärende för en manager baserat på ärende-ID
         public IActionResult CrimeManager(int id)
 		{
+            var employeeId = contextAcc.HttpContext.User.Identity.Name;
+            var manager = errandRepository.Employees.FirstOrDefault(e => e.EmployeeId == employeeId);
 
-            if (id < 0)
+            if (manager == null)
             {
-                return BadRequest("Invalid Errand ID.");
+                return BadRequest("Invalid Errand ID");
             }
 
-            ViewBag.ErrandId = id;
+            var errand = errandRepository.GetErrandById(id);
+            if (errand == null)
+            {
+                return NotFound();
+            }
 
-            return View(errandRepository.Employees);
+            var investigators = errandRepository.GetDepartmentInvestigators(manager.DepartmentId);
+            var statuses = errandRepository.Statuses.ToList();
+
+            var viewModel = new ManagerViewModel
+            {
+                Errand = errand,
+                Investigators = investigators,
+                Statuses = statuses,
+                Departments = errandRepository.Departments,
+                ErrandId = errand.ErrandId
+            };
+
+            return View(viewModel);
         }
 
-        //Visar startvyn för en manager med en lista över alla errands
-        public ViewResult StartManager()
-		{
 
-            return View(errandRepository);
+        //Visar startvyn för en manager med en lista över alla errands
+        public IActionResult StartManager(string departmentId, string employeeName, string statusId, string refnumber)
+		{
+            var employeeId = contextAcc.HttpContext.User.Identity.Name;
+
+            var manager = errandRepository.Employees.FirstOrDefault(e => e.EmployeeId == employeeId);
+
+            if (manager == null)
+            {
+                return Unauthorized(); // se till så att managern existerar
+            }
+
+            var errands = errandRepository.GetManagerErrands(manager.DepartmentId, employeeName, statusId, refnumber); // Hämta errands för managerns department
+            var statuses = errandRepository.Statuses.ToList();
+            var investigators = errandRepository.GetDepartmentInvestigators(manager.DepartmentId).ToList(); // visa bara investigators med samma department som managern
+
+            var viewModel = new ManagerViewModel
+            {
+                Errands = errands,
+                Statuses = statuses,
+                Investigators = investigators,
+                Departments = errandRepository.Departments // Assuming you might need departments
+            };
+
+            return View(viewModel); // Pass the view model to the view
         } 
+
 
         public IActionResult HandleErrand(int errandId, bool noAction, string reason, string? employeeId)
         {

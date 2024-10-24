@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Identity.Client;
 using Miljoboven.Models;
+using Miljoboven.Models.ViewModels;
 using Microsoft.AspNetCore.Hosting;
 using System.Reflection.Metadata;
 using Microsoft.EntityFrameworkCore;
@@ -17,20 +18,39 @@ namespace Miljoboven.Controllers
         private readonly IErrandRepository errandRepository;
         //lagra referensen till IwebHostEnvironment, används för att routa till wwwroot med filhantering
         private readonly IWebHostEnvironment webHostEnvironment;
+        // lagra referense till IHttpContextAccessor, används för att hämta data om inloggade användare
+        private readonly IHttpContextAccessor contextAcc;
 
-        // Konstruktor för att dependency injecta IErrandRepository och IwebHostEnvironment
-        public InvestigatorController(IErrandRepository errandRepository, IWebHostEnvironment webHostEnvironment)
-		{
-			this.errandRepository = errandRepository;
-            this.webHostEnvironment = webHostEnvironment;   
-		}
+        // Konstruktor för att dependency injecta IErrandRepository och IwebHostEnvironment och IHttpContextAccessor
+        public InvestigatorController(IErrandRepository errandRepository, IWebHostEnvironment webHostEnvironment, IHttpContextAccessor httpContextAccessor)
+        {
+            this.errandRepository = errandRepository;
+            this.webHostEnvironment = webHostEnvironment;
+            contextAcc = httpContextAccessor;
+        }
 
-		public IActionResult StartInvestigator()
+        public IActionResult StartInvestigator(string statusId, string refnumber)
 		{
-            // Hämtar alla ärenden från repositoryt och skickar dem till vyn
-            
-            return View(errandRepository);
-		}
+
+            var employeeId = contextAcc.HttpContext.User.Identity.Name; // Get the logged-in user's employeeId
+            var investigator = errandRepository.Employees.FirstOrDefault(e => e.EmployeeId == employeeId);
+
+            if (investigator == null)
+            {
+                return Unauthorized(); // Ensure the investigator exists
+            }
+
+            var errands = errandRepository.GetInvestigatorErrands(employeeId, statusId, refnumber).ToList(); // Fetch errands for the logged-in investigator
+            var statuses = errandRepository.Statuses.ToList();
+
+            var viewModel = new InvestigatorViewModel
+            {
+                Errands = errands,
+                Statuses = statuses
+            };
+
+            return View(viewModel); // Pass the view model to the view
+        }
 
         // Visar detaljer för ett specifikt ärende baserat på dess ID
         public IActionResult CrimeInvestigator(int id)

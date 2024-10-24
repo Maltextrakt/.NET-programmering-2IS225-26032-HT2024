@@ -3,6 +3,7 @@ using Miljoboven.Models;
 using Miljoboven.Models.POCO;
 using Miljoboven.Infrastructure;
 using Microsoft.AspNetCore.Authorization;
+using Miljoboven.Models.ViewModels;
 
 namespace Miljoboven.Controllers
 {
@@ -19,10 +20,25 @@ namespace Miljoboven.Controllers
 		}
 
         // Visar startvyn för samordnare med en lista över alla ärenden
-        public ViewResult StartCoordinator()
+        public ViewResult StartCoordinator(string statusId, string departmentId, string casenumber)
         {
+            var errands = errandRepository.GetCoordinatorErrands(statusId, departmentId, casenumber);
 
-			return View(errandRepository);
+            
+
+            var statuses = errandRepository.Statuses.ToList();
+            //var employees = errandRepository.Employees.ToList();
+            var departments = errandRepository.Departments.ToList();
+
+            var viewModel = new CoordinatorViewModel
+            {
+                Errands = errands.ToList(),
+                Statuses = statuses,
+                //Employees = employees,
+                Departments = departments
+            };
+
+			return View(viewModel);
         }
 
         // Visar detaljer för ett specifikt errand baserat på dess ID
