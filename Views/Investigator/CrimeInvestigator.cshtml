@@ -1,7 +1,4 @@
-﻿@* @model IEnumerable<ErrandStatus>
- *@
-
- @model Miljoboven.Models.POCO.Errand
+﻿@model Miljoboven.Models.POCO.Errand
 
 @{
     Layout = "_InvestigatorLayout";
@@ -10,10 +7,9 @@
 <h2>Detaljer för ärendet</h2>
 <p class="info">Du är inloggad som handläggare</p>
 
-<!-- Use the ViewComponent to display errand details -->
 @await Component.InvokeAsync("Errand", new { errandId = ViewBag.ErrandId })
 
-<!-- Keep the dropdown list separate -->
+<!-- Håll dropdown listan separat -->
 <section id="bottomColumn">
     <h3>Redigera ärende</h3>
 

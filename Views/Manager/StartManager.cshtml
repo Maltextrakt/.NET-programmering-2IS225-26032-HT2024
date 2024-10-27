@@ -48,34 +48,4 @@
 
 
 <!--Nedan ser man en lista på ärenden-->
-<table>
-	<tr>
-		<th>Ärende anmält</th>
-		<th>Ärendenummer</th>
-		<th>Miljöbrott</th>
-		<th>Status</th>
-		<th>Avdelning</th>
-		<th>Handläggare</th>
-	</tr>
-	@if (Model.Errands.Any())
-	{
-		@foreach (var errand in Model.Errands)
-		{
-			<tr>
-				<td>@errand.DateOfObservation.ToString("yyyy-MM-dd")</td>
-				<td><a asp-controller="Manager" asp-action="CrimeManager" asp-route-id="@errand.ErrandId">@errand.RefNumber</a></td>
-				<td>@errand.TypeOfCrime</td>
-				<td>@errand.StatusName</td>
-				<td>@errand.DepartmentName</td>
-				<td>@errand.EmployeeName</td>
-			</tr>
-		}
-	}
-	else
-	{
-		<tr>
-			<td colspan="6">Inga ärenden funna</td>
-		</tr>
-	}
-
-</table>
+ @await Component.InvokeAsync("ErrandList", new { errands = Model.Errands, controllerName = "Manager", actionName = "CrimeManager"})

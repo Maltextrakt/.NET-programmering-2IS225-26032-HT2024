@@ -80,7 +80,7 @@ namespace Miljoboven.Controllers
             return View(viewModel); // Pass the view model to the view
         } 
 
-
+        // hanterar ändring av errands av en manager, assigna en utredare, klicka i att det inte behövs utredas 
         public IActionResult HandleErrand(int errandId, bool noAction, string reason, string? employeeId)
         {
 

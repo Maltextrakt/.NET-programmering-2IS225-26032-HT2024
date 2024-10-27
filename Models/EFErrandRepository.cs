@@ -5,18 +5,18 @@ using System.Security.Cryptography;
 
 namespace Miljoboven.Models
 {
+    // Repository för att hantera databasinteraktioner med ärenden 
     public class EFErrandRepository : IErrandRepository
     {
         private readonly ApplicationDbContext context;
 
+        // konstruktor för att dependency injecta ApplicationDbContext
         public EFErrandRepository(ApplicationDbContext ctx)
         {
             this.context = ctx;
         }
 
-        //gamla sättet att hämta errands från db
-        //public IQueryable<Errand> Errands => context.Errands;
-
+        //hämtar alla errands inklusive samples och pictures genom eager loading
         public IQueryable<Errand> Errands =>
             context.Errands.Include(e => e.Samples).Include(e => e.Pictures);
         public IQueryable<Department> Departments => context.Departments;
@@ -32,6 +32,7 @@ namespace Miljoboven.Models
                 .FirstOrDefault(e => e.ErrandId == id);
         }
 
+        // Hämtar ärenden tillhörande en specifik avdelning
         public IQueryable<Errand> GetErrandsByDepartment(string departmentId)
         {
             return context.Errands
@@ -67,7 +68,7 @@ namespace Miljoboven.Models
                 Errand dbEntry = context.Errands.FirstOrDefault(e => e.ErrandId == errand.ErrandId);
                 if(dbEntry != null)
                 {
-                    //dbEntry.ErrandId = errand.ErrandId;
+                    
                     dbEntry.RefNumber = errand.RefNumber;
                     dbEntry.Place = errand.Place;
                     dbEntry.TypeOfCrime = errand.TypeOfCrime;
@@ -199,6 +200,7 @@ namespace Miljoboven.Models
             }
         }
 
+        // Uppdaterar status på ett specifikt ärende
         public void UpdateStatus(int errandId, string statusId)
         {
             var errand = context.Errands.FirstOrDefault(e => e.ErrandId == errandId);
@@ -209,6 +211,7 @@ namespace Miljoboven.Models
             }
         }
 
+        // Tilldelar en avdelning till ett ärende
         public void AssignDepartment(int errandId, string departmentId)
         {
             var errand = context.Errands.FirstOrDefault(e => e.ErrandId == errandId);
@@ -219,6 +222,7 @@ namespace Miljoboven.Models
             }
         }
 
+        // Hämtar ärenden som samordnaren kan se, med möjlighet till filtrering
         public IEnumerable<MyErrand> GetCoordinatorErrands(string statusId, string departmentId, string refnumber)
         {
             var errandList = from err in Errands
@@ -243,19 +247,18 @@ namespace Miljoboven.Models
                     EmployeeName = (err.EmployeeId == null ? "ej tillsatt" : empE.EmployeeName)
                 };
 
-			// Apply status filter if provided
-			if (!string.IsNullOrEmpty(statusId) && statusId != "Välj alla")
+            // Filtrering för status, avdelning och referensnummer
+
+            if (!string.IsNullOrEmpty(statusId) && statusId != "Välj alla")
 			{
 				errandList = errandList.Where(e => e.StatusName == statusId);
 			}
 
-			// Apply department filter if provided
 			if (!string.IsNullOrEmpty(departmentId) && departmentId != "Välj alla")
 			{
 				errandList = errandList.Where(e => e.DepartmentName == departmentId);
 			}
 
-			// Apply refnumber filter if provided
 			if (!string.IsNullOrEmpty(refnumber))
 			{
 				errandList = errandList.Where(e => e.RefNumber == refnumber);
@@ -316,6 +319,7 @@ namespace Miljoboven.Models
             return Employees.Where(e => e.DepartmentId == departmentId && e.RoleTitle == "Investigator"); 
         }
 
+        // Hämtar ärenden som investigator kan se, med filtrering
         public IQueryable<MyErrand> GetInvestigatorErrands(string employeeId, string statusId, string refnumber)
         {
             var errandList = from err in Errands

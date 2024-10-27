@@ -51,7 +51,7 @@
         <span class="label">Händelser: </span><br />
         @Model.InvestigatorAction
     </p>
-    @* <h3>Bilder och dokument</h3> *@
+    
     <p>
         <span class="label">Provtagning: </span><br />
         @if (Model.Samples != null && Model.Samples.Any())
@@ -68,7 +68,7 @@
         <p>Inga prover har laddats upp.</p>
         }
     </p>
-    <!-- Display Uploaded Pictures -->
+    
     <p>
         <span class="label">Bilder: </span><br />
         @if (Model.Pictures != null && Model.Pictures.Any())

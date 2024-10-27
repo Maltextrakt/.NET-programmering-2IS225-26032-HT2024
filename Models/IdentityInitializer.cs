@@ -3,37 +3,47 @@
 
 namespace Miljoboven.Models
 {
+    // Klass för att säkerställa att användarroller och användare är initialiserad
     public class IdentityInitializer
     {
+        // Metod som kallas för att säkerställa att roller och användare finns
         public static async Task EnsurePopulated(IServiceProvider services)
         {
+            // Hämtar UserManager och RoleManager från tjänsteprovidern (dependency injection)
             var userManager = services.GetRequiredService<UserManager<IdentityUser>>();
             var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
 
+            // Skapar nödvändiga roller och användare om de inte redan finns
             await CreateRoles(roleManager);
             await CreateUsers(userManager);
         }
-        
+
+        // Skapar de olika rollerna om de inte redan existerar i databasen
         private static async Task CreateRoles(RoleManager<IdentityRole> rManager)
         {
+            // Skapar rollen "Coordinator" om den inte finns
             if (!await rManager.RoleExistsAsync("Coordinator"))
             {
                 await rManager.CreateAsync(new IdentityRole("Coordinator"));
             }
 
+            // Skapar rollen "Investigator" om den inte finns
             if (!await rManager.RoleExistsAsync("Investigator"))
             {
                 await rManager.CreateAsync(new IdentityRole("Investigator"));
             }
 
+            // Skapar rollen "Manager" om den inte finns
             if (!await rManager.RoleExistsAsync("Manager"))
             {
                 await rManager.CreateAsync(new IdentityRole("Manager"));
             }
         }
 
+        // Skapar användare och tilldelar roller om de inte redan existerar
         private static async Task CreateUsers(UserManager<IdentityUser> uManager)
         {
+            // Skapar användarobjekt med olika ID:n för systemet
             IdentityUser E001 = new IdentityUser("E001");
             IdentityUser E100 = new IdentityUser("E100");
             IdentityUser E101 = new IdentityUser("E101");
@@ -56,6 +66,7 @@ namespace Miljoboven.Models
             IdentityUser E502 = new IdentityUser("E502");
             IdentityUser E503 = new IdentityUser("E503");
 
+            // Skapar varje användare i systemet med ett specifikt lösenord
             await uManager.CreateAsync(E001, "Pass01?");
             await uManager.CreateAsync(E100, "Pass02?");
             await uManager.CreateAsync(E101, "Pass03?");
@@ -78,6 +89,7 @@ namespace Miljoboven.Models
             await uManager.CreateAsync(E502, "Pass20?");
             await uManager.CreateAsync(E503, "Pass21?");
 
+            // Tilldelar roller till varje användare
             await uManager.AddToRoleAsync(E001, "Coordinator");
             await uManager.AddToRoleAsync(E100, "Manager");
             await uManager.AddToRoleAsync(E101, "Investigator");

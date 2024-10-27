@@ -29,18 +29,19 @@ namespace Miljoboven.Controllers
             contextAcc = httpContextAccessor;
         }
 
+        //Startsidan man kommer till som inloggad investigator
         public IActionResult StartInvestigator(string statusId, string refnumber)
 		{
 
-            var employeeId = contextAcc.HttpContext.User.Identity.Name; // Get the logged-in user's employeeId
+            var employeeId = contextAcc.HttpContext.User.Identity.Name; // Hämta den inloggade investigatorns id
             var investigator = errandRepository.Employees.FirstOrDefault(e => e.EmployeeId == employeeId);
 
             if (investigator == null)
             {
-                return Unauthorized(); // Ensure the investigator exists
+                return Unauthorized(); // Kolla så att användaren existerar
             }
 
-            var errands = errandRepository.GetInvestigatorErrands(employeeId, statusId, refnumber).ToList(); // Fetch errands for the logged-in investigator
+            var errands = errandRepository.GetInvestigatorErrands(employeeId, statusId, refnumber).ToList(); // Hämta errands för den inloggade investigatorn
             var statuses = errandRepository.Statuses.ToList();
 
             var viewModel = new InvestigatorViewModel
@@ -49,7 +50,7 @@ namespace Miljoboven.Controllers
                 Statuses = statuses
             };
 
-            return View(viewModel); // Pass the view model to the view
+            return View(viewModel); // Skicka videmodel till vyn
         }
 
         // Visar detaljer för ett specifikt ärende baserat på dess ID

@@ -54,7 +54,7 @@ namespace Miljoboven.Controllers
 
             return View(errandRepository.Departments);  
         }
-
+        // visar data från context angående rapportering av brottet
         public ViewResult ReportCrime()
         {
             var errand = HttpContext.Session.Get<Errand>("CoordinatorErrand");

@@ -2,6 +2,7 @@
 
 namespace Miljoboven.Models.ViewModels
 {
+    // viewmodel som innheåller allt som en coordinator behöver tillgång till 
     public class CoordinatorViewModel
     {
         public IEnumerable<MyErrand> Errands { get; set; } // lista av errands för ett ärende
